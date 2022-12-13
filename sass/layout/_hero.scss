@@ -1,0 +1,89 @@
+.hero__button{
+    width: 600px;
+}
+
+.hero {
+    margin:0 auto;
+    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @include minimize {
+        background-image:
+        url(../../img/desktop/white-concrete-bg.jpg);
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    }
+}
+
+@include mobile {
+    background-image:
+    url(../../img/desktop/white-concrete-bg.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+}
+}
+
+    @include tablet {
+    background-image:linear-gradient(
+        rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+    url(../images/hero/hero-tab.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image:linear-gradient(
+        rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)), url(../images/hero/hero-tab-2x.jpg);
+}
+}
+
+@include desktop {
+    background-image:
+    url(../../img/desktop/white-concrete-bg.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    }
+}
+}
+
+.hero-container {
+    
+    padding: 118px 60px;
+    @include tablet {
+        padding: 118px 204px;
+    }
+
+    @include desktop {
+        padding: 200px 237px;
+    }
+}
+
+.hero__header {
+    @include fontStyle (null, 900, 0.06em, 1.6);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+    margin: 0 auto 30px;
+    @include minimize {
+        @include fontStyle (22px, null, null, null);
+    }
+    
+    @include desktop {
+        @include fontStyle (44px, null, null, 1.36);
+    }
+    
+}
+
+
+
+.pointer {
+    cursor: pointer;
+}

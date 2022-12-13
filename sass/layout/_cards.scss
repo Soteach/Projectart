@@ -1,0 +1,117 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    @include tablet {
+        :last-child {
+            margin-right: auto;
+        }
+    }
+    
+@include mindesktop{
+    &__item:first-child .cards-footer {
+        min-height: 144px;
+    }
+}
+    
+
+@include desktop {
+    &__item:first-child .cards-footer {
+        max-height: 110px;
+    }
+
+}
+}
+
+
+.grid__item {
+    width: 100%;
+    height: 100%;
+    border-bottom:solid 1px #eee;
+
+    &:hover .product-description,
+    &:focus .product-description {
+    transform: translateY(0%);
+}
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
+}
+
+@include tablet {
+    width: calc((100% - 30px)/2);
+    
+}
+
+@include desktop {
+    width: calc((100% - 60px)/3);
+}
+}
+
+
+
+
+.product__title {
+    @include fontStyle (18px, 700, 0.06em, 2);
+    color: var(--header-color);
+    @include tranSition ();
+}
+
+.product__description {
+    @include fontStyle (16px, null, 0.03em, 2);
+    color:var(--main-font-color);
+    }
+
+.portfolio-section {
+    background-color: var(--main-white-color);
+    @include mintablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+}
+
+.product {
+    display: block;
+    width: 100%;
+}
+
+.product__thumb{
+    position: relative;
+    overflow: hidden;
+}
+
+.product-description{
+    position: absolute;
+    @include fontStyle (18px, null, 0.03em, 1.55);
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color:rgba(33, 150, 243, 0.9);
+    color: var(--main-white-color);
+    padding: 63px 24px;
+    transform:translateY(100%);
+    @include tranSition ();
+}
+
+.product__link {
+    display: block;
+}
+
+.cards-footer {
+    padding:20px 24px 20px 24px;
+    border-left:solid 1px #eee;
+    border-right:solid 1px #eee;
+}
