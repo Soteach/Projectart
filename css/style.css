@@ -264,7 +264,6 @@ summary {
 body {
   font-family: "Roboto", monotype;
   color: var(#F8F8F8);
-  background-color: blue;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -643,10 +642,6 @@ img {
   color: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__button {
-  width: 600px;
 }
 
 .hero {
@@ -1839,24 +1834,23 @@ label .checkbox-label::before {
 button {
   width: 200px;
   height: 54px;
-  background-color: red;
+  background-color: #E9AF3F;
 }
 
 .hero__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 200px;
-  height: 50px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 1.88;
-  color: red;
-  background-color: red;
-  border-radius: 4px;
-  margin: 0 auto;
   border: none;
+  height: 54px;
+  width: 200px;
+  left: 20px;
+  top: 20px;
+  border-radius: 16px;
+  padding: 16px 32px 16px 32px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #F8F8F8;
 }
 .hero__button:hover, .hero__button:focus {
   color: var(--main-white-color);
@@ -2053,4 +2047,4 @@ button {
   border-right: solid 1px #eee;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
