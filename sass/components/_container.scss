@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-     outline: solid 2px red ; 
+    //  outline: solid 2px red ; 
     @media screen and (min-width:480px) {
         width: 480px;
     }
@@ -12,7 +12,7 @@
         width: 768px;
     }
 
-    @media screen and (min-width:1200px) {
-        width: 1200px;
+    @media screen and (min-width:1440px) {
+        width: 1440px;
     }
 }

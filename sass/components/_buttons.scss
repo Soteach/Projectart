@@ -2,10 +2,41 @@ button{
     width: 200px;
     height: 54px;
     background-color: $yellow-color;
+    cursor: pointer;
+}
+
+.header-button{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+background-color: transparent;
+gap: 10px;
+width: 200px;
+height: 54px;
+left: 1100px;
+top: 12px;
+border: 1px solid $blue-color;
+border-radius: 16px;
+color: $blue-color;
+
+&:hover,
+    &:focus {
+        color: $gold-color;
+        border-color: $gold-color;
+
+    }
+
+&:active{
+    background-color:$gold-color ;
+    color:$main-color;
+}
 }
 
 .hero__button {
-    border: none;
+border: none;
 height: 54px;
 width: 200px;
 left: 20px;
@@ -20,9 +51,88 @@ line-height: 22px;
 color: $main-color;
     &:hover,
     &:focus {
-        color: var(--main-white-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: $yellow-color;
+        border: 3px solid $yellow-color ;
+        background-color: transparent;
     }
+
+&:active{
+     background-color: $gold-color;
+     color:$main-color;
+}
+
+}
+
+.story-button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+background-color: transparent;
+gap: 10px;
+width: 200px;
+height: 54px;
+left: 1107px;
+top: 1355px;
+border: 1px solid $main-color;
+border-radius: 16px;
+color: $main-color;
+
+
+&:hover,
+    &:focus {
+        color: $gold-color;
+        border-color: $gold-color;
+
+    }
+
+&:active{
+    background-color:$gold-color ;
+    color:$main-color;
+}
+
+}
+
+.gallery-button{
+    background-color: transparent;
+    border:1px solid #F8F8F8;;
+}
+
+.dish__button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 10px;
+width: 310px;
+height: 54px;
+background: #E9AF3F;
+border-radius: 16px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+border: none;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: $main-color;
+
+ &:hover,
+    &:focus {
+        color: $yellow-color;
+        border: 3px solid $yellow-color ;
+        background-color: transparent;
+    }
+
+    &:active{
+     background-color: $gold-color;
+     color:$main-color;
+}
 
 }
 

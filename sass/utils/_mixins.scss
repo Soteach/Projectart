@@ -37,13 +37,13 @@
 
 
 @mixin mindesktop {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1439px) {
         @content
     }
 }
 
 @mixin desktop {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
         @content
     }
 }

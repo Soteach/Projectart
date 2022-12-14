@@ -1,0 +1,54 @@
+
+.story {
+    background-color:$blue-color ;
+    @include desktop{
+    padding-top:94px;
+    padding-bottom: 94px;
+    }
+}
+
+.story-container{
+       display: flex;
+}
+
+.story-title{
+    color:$main-color;
+    text-transform: uppercase;
+    font-family: 'GFS Neohellenic';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 40px;
+
+}
+
+.story-block{
+    width: 420px;
+    margin-top: 60px;
+    margin-left: 20px;
+    
+}
+
+.story__text-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.story-image{
+    width: 805px;
+}
+
+.story-text{
+    color:$main-color;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.story-button__container{
+    display: flex;
+}

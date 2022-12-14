@@ -1,0 +1,139 @@
+.dishes{
+    padding: 100px 235px;
+    
+    &__head {
+        @include fontStyle (36px, 700, 0.03em, 1.17);
+        text-align: center;
+        color: var(--header-color);
+    }
+
+   @include mindesktop {
+        display: none;
+    }
+
+    
+}
+
+.dish__list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.header__indent {
+
+    @include desktop {
+        margin-bottom: 50px;
+    }
+    
+}
+
+.dish__header{
+font-family: 'GFS Neohellenic';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+text-transform: uppercase;
+color: $dark-blue-color;
+display: flex;
+justify-content: center;
+}
+
+.dishes{
+    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @include minimize {
+        background-image:
+        url(../../img/desktop/white-concrete-bg.jpg);
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    }
+}
+
+@include mobile {
+    background-image:
+    url(../../img/desktop/white-concrete-bg.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+}
+}
+
+    @include tablet {
+    background-image:
+    url(../../img/desktop/white-concrete-bg.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+}
+}
+
+@include desktop {
+    background-image:
+    url(../../img/desktop/white-concrete-bg.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    }
+}
+}
+
+.dish__card-header{
+    width: 301px;
+height: 38px;
+font-family: 'GFS Neohellenic';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+display: flex;
+align-items: center;
+color: $blue-color;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin-bottom: 6px;
+}
+
+.dish__price{
+    width: 301px;
+height: 28px;
+font-family: 'GFS Neohellenic';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+color:$blue-color;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin-bottom: 6px;
+}
+
+.dish__text{
+    width: 301px;
+height: 66px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color:$dark-blue-color;
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+margin-bottom: 24px;
+}
