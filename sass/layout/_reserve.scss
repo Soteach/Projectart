@@ -1,19 +1,21 @@
-.team {
-    background-color: var(--second-section-color);
+.reserve {
+    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;;
     
-    @media screen and (max-width:480px){
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    // @media screen and (max-width:480px){
+    //     padding-top: 60px;
+    //     padding-bottom: 60px;
+    // }
 
-    @media screen and (min-width:480px){
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    @media screen and (min-width:1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+    // @media screen and (min-width:480px){
+    //     padding-top: 60px;
+    //     padding-bottom: 60px;
+    // }
+    // @media screen and (min-width:1200px) {
+    //     padding-top: 94px;
+    //     padding-bottom: 94px;
+    // }
     
 }
 
@@ -95,26 +97,4 @@
     :last-child{
         margin-right: 0;
     }
-}
-
-.social__links{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include tranSition ();
-    
-    &:hover, 
-    &:focus
-    {
-        background-color: var(--accent-color);
-    }
-
-    &:hover .worker-soc-icon-team,
-    &:focus .worker-soc-icon-team
-{
-    fill:#FFFFFF;
-}
 }

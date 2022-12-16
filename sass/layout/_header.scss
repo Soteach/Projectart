@@ -1,64 +1,77 @@
-.header {
-    color: var(--main-white-color);
-    @include mintablet {
-        padding: 0px 15px;
+.header-container{
+    min-width: 100%;
+border-bottom: 1px solid $blue-color;
+padding-right: 15px;
+@media screen and (max-width:1440px) {
+        margin-right:358px;
+        
     }
-}
+    
+@media screen and (max-width:1439px) {
+        margin-right: 320px;
+    }
 
-// .container:first-child{
-//     border-bottom: 1px solid $blue-color;
-// }
+    @media screen and (max-width:378px) {
+        margin-right: 20px;
+    }
+
+}
 
 .header-logo{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-
-}
-
-.header-div{
     display: block;
-    height: 100px;
-    width: 100px;
-    border:1px solid red;
+    width: 64px;
+    height: 64px;
+    
+    @media screen and (max-width:870px) {
+        display: none;
+        
+    }
+    
 }
 
 .header .container{
-    position: relative;
+    // position: relative;
     display: flex; 
     align-items: center;
+    padding-top: 35px;
 }
-
-.nav {
-    margin-left: 358px;
-    @include mintablet {
-    display: none;
-}
+.nav{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    @media screen and (max-width:740px) {
+        display: none;
+        
+    }
 }
 
 .nav-list {
     display: flex;
     justify-content: center;
+    align-items: baseline;
 }
 
-.nav__item {
-    padding-top:30px;
-    padding-bottom: 30px;
+.nav__link{
+padding:16px 30px 24px 24px;
+   
+}
+.nav__item .nav__item-current{
+    display: flex;
+    height: 68px;
+    
 }
 
-.nav__item:not(:last-child) {
-    margin-right: 50px;
+
+.nav__item-current .nav__item:not(:last-child) {
+    margin-right: 35px;
 }
 
-.nav__item-current{
-    margin-right: 50px;
-}
 
 .nav__link {
-    @include fontStyle (14px, 500, 0.02em, 1.14);
+    @include fontStyle (16px, 400, 0.02em, 1.38);
     color:  $blue-color;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
     @include tranSition ();
 
     &:hover, 
@@ -82,54 +95,6 @@
     width: 100%;
     height: 3px;
     background-color:$gold-color;
-    bottom: -13px;
+    bottom: -2px;
     left: 0;
-}
-
-.connect {
-   @include mintablet {
-    display: none;  
-    
-}
-
-    @include desktop {
-        margin-left: 36px;
-    }
-
-}
-
-.connect {
-    & a {
-        @include tablet;
-        @include fontStyle (12px, 500, 0.02em, 1.7);
-        text-align: start;
-        @include desktop {
-            @include fontStyle (14px, 500, 0.02em, 1.14);
-        }
-    
-    color: var(--main-font-color);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    @include tranSition ();
-
-    &:hover, 
-    &:focus{
-        color: var(--accent-color);
-    }
-}
-
-    &__mail {
-        margin-right: 30px;
-    }
-}
-
-.head-phone {
-    margin-right: 10px;
-    align-items: center;
-    fill:currentColor;
-}
-
-.head-envelope {
-    margin-right: 10px;
-    fill:currentColor;   
 }

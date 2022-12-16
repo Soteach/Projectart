@@ -53,10 +53,14 @@
 }
 
 .hero__header {
-    @include fontStyle (null, 900, 0.06em, 1.6);
+    font-family: "GFS Neohellenic";
+    font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 74px;
     text-align: center;
     text-transform: uppercase;
-    color: var(--main-white-color);
+    color: #071E34;
     @include minimize {
         @include fontStyle (22px, null, null, null);
     }
