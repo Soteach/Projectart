@@ -1,9 +1,9 @@
 .backdrop {
     width: 100vw;
     height: 100vh;
-    background-color:var(--modal-window-background);
+    background-color:rgba(17, 70, 122, 0.7);
     position: fixed;
-    border: solid 1px var(--modal-window-background);
+    border: solid 1px $blue-color;
     top:0;
     @include tranSition ();
     transition-delay: 50ms;
