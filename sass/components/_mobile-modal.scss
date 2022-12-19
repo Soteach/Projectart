@@ -1,50 +1,11 @@
-
-.menu-open-btn {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color:transparent;
-    border: none;
-    padding: 10px 15px;
-
-    
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-        @include tranSition();
-    }
-
-    @include tablet {
-        display: none;
-    }
-
-}
-
-.menu-close-btn {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color:transparent;
-    border: none;
-    padding: 10px 15px;
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-        @include tranSition();
-    }
-}
-
 .mob-menu {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--main-white-color);
+    background-image: url(../../img/desktop/white-concrete-bg.jpg);    
     width: 100vw;
     height: 100vh;
-    padding: 48px 40px;
+    padding: 190px 16px;
     z-index: 1;
     @include tablet {
         display: none;
@@ -59,12 +20,48 @@
     height: 100%;
 }
 
+.mob__item{
+font-family: 'GFS Neohellenic';
+color: $blue-color;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+width: 100%;
+text-align: center;
+
+&a {
+    
+width: 100%;
+text-align: center;
+}
+
+}
+
 .mob__item:not(:last-child){
-    margin-bottom: 32px;
+    margin-bottom: 64px;
+}
+
+.mob__item-current{
+color: $gold-color;
+position: relative;
+        
+}
+
+.mob__item-current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color:$gold-color;
+    bottom: -2px;
+    left: 0;
 }
 
 .mob-menu-list {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mob__link {
@@ -74,6 +71,12 @@
     &:focus {
         color: var(--accent-color);
         @include tranSition();
+    }
+}
+
+.mobile-background-picture{
+     @media screen and (min-width:768px) {
+        display: none;
     }
 }
 

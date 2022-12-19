@@ -5,75 +5,103 @@
 }
 
 .hero {
-    background-image: url(../../images/hero/desktop/hero-1x.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 138px;
-    padding-bottom: 223px;
+    background-size: inherit;
     background-position: right;
-
-
-//     @include minimize {
-//         background-image:
-//         url(../../img/desktop/white-concrete-bg.jpg);
-//         @media screen and (min-device-pixel-ratio: 2),
-//         screen and (min-resolution: 192dpi),
-//         screen and (min-resolution: 2dppx) {
-//     }
-// }
-
-// @include mobile {
-//     background-image:
-//     url(../../img/desktop/white-concrete-bg.jpg);
-//     @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-// }
-// }
-
-
-// @include desktop {
-//     background-image:
-//     url(../../img/desktop/white-concrete-bg.jpg);
-//     @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     }
-// }
+    @media screen and (max-width:1280px) {
+        
+    }
+    
 }
 
-.hero-container {
-    display: flex;
-    
-    
 
-    @include desktop {
-        // padding: 200px 237px;
-    }
+.mobile-background{
+    display: block;
+    height: 100%;
+
+}
+
+.hero-wrapper{
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.hero-image{
+    display: inline-block;
+    min-width: 780px;
+    min-height: 100%;
+    background-image:url(../../img/desktop/main-photo-1440-1x.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: -2%;
+ @include mintablet {
+    display: none;
+ }
+}
+
+.header-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+
+
+    @media screen and (min-width:768px) {
+    padding-top: 183px;
+    padding-bottom: 223px;
+}
+}
+
+.hero-logo{
+    width: 120px;
+    height: 100px;
+    
 }
 
 .hero__header {
     font-family: "GFS Neohellenic";
     font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 74px;
-    text-align: center;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
     text-transform: uppercase;
-    color: #071E34;
-    @include minimize {
-        @include fontStyle (22px, null, null, null);
+    color: $dark-blue-color;
+    margin-bottom: 4px;
+    @media screen and (max-width:1200px) {
+        color:$gold-color;
+        
     }
-    
-    @include desktop {
-        @include fontStyle (44px, null, null, 1.36);
-    }
-    
+        
 }
 
-.header-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hero-text{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: $dark-blue-color;
+margin-bottom: 24px;
+@media screen and (max-width:1200px) {
+        color:$gold-color;   
+    }
 }
 
+.hero-second-header{
+font-family: 'GFS Neohellenic';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+text-transform: uppercase;
+color: $dark-blue-color;
+margin-bottom: 32px;
+@media screen and (max-width:1200px) {
+        color:$gold-color;
+        
+    }
+}

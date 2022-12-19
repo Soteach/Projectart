@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 <link
       rel="icon"
       type="image/png"
@@ -19,12 +19,12 @@
 <body>
     <div class="wrapper">
     <header class="header">
-        <div class="container header-container">
-        
+        <div class="container">
+        <div class="header-container">
 <a  href="index.html">
     <img class="header-logo" src="./img/desktop/logo desktop.svg" alt="logo">
 </a>
-
+<div class="nav-wrapper">
     <nav class="nav" >
     <ul class="nav-list">
         <li class="list nav__item-current">
@@ -44,53 +44,68 @@
         </li>
         
     </ul>
-    
 </nav>
 <button type="button" class="header-button" data-modal-open>view the menu</button>
-        </div>
 </div>
+<button type="button" class="menu-open-button"> <img src="./svg/menu-button.svg" alt=""></button>
+</div>
+</div>
+
 <div class="mob-menu is-hidden">
     <div class="mob-container">
     <button class="menu-close-btn" type="button">
-        <svg width="40" height="40">
-            <use href="./images/symbol-defs.svg#icon-close-menu-mobile"></use>
-        </svg>
+        <img src="./svg/modal-close-blue-button.svg" alt="">
     </button>
     <nav class="mob-nav" >
         <ul class="mob-menu-list">
-            <li class="list mob__item current">
-                <a class="mob__link link" href="index.html">Студия</a>
+            <li class="list mob__item-current mob__item">
+                <a class="mob__link link" href="index.html">Home</a>
             </li>
             <li class="list mob__item">
-                <a class="mob__link link" href="portfolio.html">Портфолио</a>
+                <a class="mob__link link" href="portfolio.html">About us</a>
             </li>
             <li class="list mob__item">
-                <a class="mob__link link" href="">Контакты</a>
+                <a class="mob__link link" href="">Menu</a>
+            </li>
+            <li class="list mob__item">
+                <a class="mob__link link" href="">Catering</a>
+            </li>
+            <li class="list mob__item">
+                <a class="mob__link link" href="">Contacts</a>
             </li>
         </ul>
     </nav>
     
-
 </div>
 </div>
     </header>
-    <!-- 
+    
     <main>
         <section class="hero">
-            <div class="container hero-container">
+            
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-image"></div>
+                <div class="hero-container">
 <div class="header-title">
-                <img src="./img/desktop/logo desktop.svg" alt="logo">
+                <img class="hero-logo" src="./img/desktop/logo desktop.svg" alt="logo">
         <h1 class="hero__header">Artemis</h1>
-        <p>Greek Restaurant</p>
-        <h2>Where flavors meet tradition</h2>
+        <p class="hero-text">Greek Restaurant</p>
+        <h2 class="hero-second-header">Where flavors meet tradition</h2>
         <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+    <img class="mobile-background-picture" src="./images/hero/desktop/hero-1x.png"/>    
+    </div>
         </div>
-
-    
-        
+        </div>
+        </div>
         </div>
     </section>
-    </div>
+            
+
+    
+   
+
+    <!-- 
         <section class="story">
             <h2 class="story-title">Short story about us</h2>
             
@@ -772,74 +787,66 @@
 <!-- "backdrop is-hidden" -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="modal-close-button" type="button" data-modal-close>
-            <svg class="modal-close-icon" width="18" height="18" >
+             <button class="modal-close-button" type="button" data-modal-close>
+            <svg class="modal-close-icon" width="21" height="21" >
                 <use href="./images/symbol-defs.svg#icon-close-black">
                 </use>
             </svg>
         </button>
-        <p class="modal__title">Reserve table in restaurant</p>
+        <h2 class="modal-title">Reserve table in restaurant</h2>
+        <p class="modal-text">Book a table for an unforgettable evening</p>
         <form>
             <div class="modal-field">
-            <label class="modal-label">Имя</label>
-                <input type="text"
+                <input type="tel"
                 class="modal-input"  
                 name="user-name" 
-                placeholder="Іван Сулима" 
+                placeholder="Telephone number" 
                 required 
                 minlength="2" 
-                title="Іван Сулима"
+                title="Telephone number"
                 autofocus
                 />
-                <svg class="modal-icon" width="18" height="18">
-                    <use href="./images/symbol-defs.svg#icon-modal-name"></use>
+                <svg class="modal-icon" width="21" height="21">
+                    <use href="./svg/modal-phone.svg"></use>
                 </svg>
             </div>
             <div class="modal-field">
-            <label class="modal-label">Телефон</label>
-            <input type="tel" 
+            <input type="number" 
             class="modal-input" 
             name="user-tel" 
-            placeholder="+380 63 111-11-11" 
+            placeholder="Number of guests" 
             required minlength="2" 
-            title="+380 63 111-11-11" /> 
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-modal-phone"></use>
+            title="Number of guests" /> 
+            <svg class="modal-icon" width="21" height="21">
+                <use href="./svg/modal-quest.svg"></use>
             </svg>   
             </div>
             <div class="modal-field">
-            <label class="modal-label">Почта</label>
-            <input type="email" 
+            <input type="date" 
             class="modal-input"  
-            name="user-email" 
-            placeholder="IvanSulyma@gmail.com" 
+            name="user-date" 
+            placeholder="Date" 
             required minlength="2" 
-            title="IvanSulyma@gmail.com" />
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-modal-mail"></use>
+            title="Date" />
+            <svg class="modal-icon" width="21" height="21">
+                <use href="./svg/modal-date.svg"></use>
             </svg>
             </div>
             <div class="modal-field">
-                <label class="modal-label" for="user-text">Комментарий</label>
-                <textarea 
-                class="modal-text"
-                name="user-text" 
-                id="user-text" 
-                placeholder="Введите текст"
-                title="Напишите ваш отзив"></textarea>
+            <input type="time" 
+            class="modal-input"  
+            name="modal-clock" 
+            placeholder="Time" 
+            required minlength="2" 
+            title="Time" />
+            <svg class="modal-icon" width="21" height="21">
+                <use href="./svg/modal-clock.svg"></use>
+            </svg>
             </div>
-<div class="modal-field-check">
-    <input type="checkbox"
-    class="modal-check visually-hidden" 
-    name="privacy" 
-    value="true"
-    id="privacy">
-    <label class="checkbox-label" for="privacy">Соглашаюсь с рассылкой и принимаю 
-        <a href="" class="privacy-link">Условия договора</a>
-    </label>
-</div>
-            <button class="modal-button pointer" type="submit">Отправить</button>
+            
+           
         </form>
+         <button class="modal-button pointer" type="submit">Book a table</button>
     </div>
 </div>
 

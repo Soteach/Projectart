@@ -1,31 +1,16 @@
 .header-container{
-    min-width: 100%;
-border-bottom: 1px solid $blue-color;
-padding-right: 15px;
-@media screen and (max-width:1440px) {
-        margin-right:358px;
-        
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $blue-color;
+    width: 100%;
     
-@media screen and (max-width:1439px) {
-        margin-right: 320px;
-    }
-
-    @media screen and (max-width:378px) {
-        margin-right: 20px;
-    }
-
 }
 
 .header-logo{
     display: block;
     width: 64px;
     height: 64px;
-    
-    @media screen and (max-width:870px) {
-        display: none;
-        
-    }
     
 }
 
@@ -35,12 +20,20 @@ padding-right: 15px;
     align-items: center;
     padding-top: 35px;
 }
+
+.nav-wrapper{
+display: flex;
+ @media screen and (max-width:768px) {
+        margin-left: auto;
+        
+    }
+}
+
 .nav{
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-wrap: nowrap;
-    @media screen and (max-width:740px) {
+
+    @media screen and (max-width:768px) {
         display: none;
         
     }
@@ -62,6 +55,9 @@ padding:16px 30px 24px 24px;
     
 }
 
+.nav__item:first-child{
+    margin-right: 45px;
+}
 
 .nav__item-current .nav__item:not(:last-child) {
     margin-right: 35px;
