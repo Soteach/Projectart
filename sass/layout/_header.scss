@@ -15,10 +15,13 @@
 }
 
 .header .container{
-    // position: relative;
     display: flex; 
     align-items: center;
     padding-top: 35px;
+    @media screen and (max-width:880px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
 }
 
 .nav-wrapper{
@@ -47,7 +50,11 @@ display: flex;
 
 .nav__link{
 padding:16px 30px 24px 24px;
-   
+
+@media screen and (max-width:880px) {
+        padding:8px 15px 12px 12px;
+    }   
+
 }
 .nav__item .nav__item-current{
     display: flex;

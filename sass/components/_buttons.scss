@@ -82,6 +82,7 @@ font-size: 16px;
 line-height: 22px;
 color: $main-color;
 margin-bottom: 24px;
+z-index: 1;
     &:hover,
     &:focus {
         color: $yellow-color;

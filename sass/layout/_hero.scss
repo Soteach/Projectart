@@ -8,9 +8,6 @@
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: right;
-    @media screen and (max-width:1280px) {
-        
-    }
     
 }
 
@@ -25,10 +22,11 @@
     position: relative;
     display: flex;
     text-align: center;
+   
 }
 
 .hero-image{
-    display: inline-block;
+    
     min-width: 780px;
     min-height: 100%;
     background-image:url(../../img/desktop/main-photo-1440-1x.png) ;
@@ -48,6 +46,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
+    z-index: 1;
+    
 
 
     @media screen and (min-width:768px) {
@@ -59,7 +59,7 @@
 .hero-logo{
     width: 120px;
     height: 100px;
-    
+    z-index: 1;
 }
 
 .hero__header {
@@ -71,7 +71,8 @@
     text-transform: uppercase;
     color: $dark-blue-color;
     margin-bottom: 4px;
-    @media screen and (max-width:1200px) {
+    z-index: 1;
+    @media screen and (max-width:1190px) {
         color:$gold-color;
         
     }
@@ -86,7 +87,8 @@ font-size: 16px;
 line-height: 22px;
 color: $dark-blue-color;
 margin-bottom: 24px;
-@media screen and (max-width:1200px) {
+z-index: 1;
+@media screen and (max-width:1190px) {
         color:$gold-color;   
     }
 }
@@ -100,7 +102,8 @@ line-height: 37px;
 text-transform: uppercase;
 color: $dark-blue-color;
 margin-bottom: 32px;
-@media screen and (max-width:1200px) {
+z-index: 1;
+@media screen and (max-width:1190px) {
         color:$gold-color;
         
     }

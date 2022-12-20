@@ -313,6 +313,12 @@ img {
   align-items: center;
   padding-top: 35px;
 }
+@media screen and (max-width: 880px) {
+  .header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .nav-wrapper {
   display: flex;
@@ -341,6 +347,11 @@ img {
 
 .nav__link {
   padding: 16px 30px 24px 24px;
+}
+@media screen and (max-width: 880px) {
+  .nav__link {
+    padding: 8px 15px 12px 12px;
+  }
 }
 
 .nav__item .nav__item-current {
@@ -396,7 +407,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding: 190px 16px;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -568,6 +579,7 @@ img {
   background-size: inherit;
   background-position: right;
 }
+
 .mobile-background {
   display: block;
   height: 100%;
@@ -580,7 +592,6 @@ img {
 }
 
 .hero-image {
-  display: inline-block;
   min-width: 780px;
   min-height: 100%;
   background-image: url(../../img/desktop/main-photo-1440-1x.png);
@@ -602,6 +613,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .header-title {
@@ -613,6 +625,7 @@ img {
 .hero-logo {
   width: 120px;
   height: 100px;
+  z-index: 1;
 }
 
 .hero__header {
@@ -624,8 +637,9 @@ img {
   text-transform: uppercase;
   color: #071E34;
   margin-bottom: 4px;
+  z-index: 1;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1190px) {
   .hero__header {
     color: #E5A11E;
   }
@@ -639,8 +653,9 @@ img {
   line-height: 22px;
   color: #071E34;
   margin-bottom: 24px;
+  z-index: 1;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1190px) {
   .hero-text {
     color: #E5A11E;
   }
@@ -655,8 +670,9 @@ img {
   text-transform: uppercase;
   color: #071E34;
   margin-bottom: 32px;
+  z-index: 1;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1190px) {
   .hero-second-header {
     color: #E5A11E;
   }
@@ -1783,6 +1799,7 @@ button {
   line-height: 22px;
   color: #F8F8F8;
   margin-bottom: 24px;
+  z-index: 1;
 }
 .hero__button:hover, .hero__button:focus {
   color: #E9AF3F;
