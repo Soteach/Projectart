@@ -91,12 +91,15 @@ z-index: 1;
     }
 
 &:active{
-     background-color: $gold-color;
-     color:$main-color;
+    background-color: $gold-color;
+    color:$main-color;
 }
-
+@media screen and(max-width: 767px){
+   width: 342px;
+   margin-left: auto;
+   margin-right: auto;
+    }
 }
-
 
 
 .story-button{
@@ -114,7 +117,10 @@ top: 1355px;
 border: 1px solid $main-color;
 border-radius: 16px;
 color: $main-color;
-
+margin-bottom: 24px;
+&__container{
+    justify-content: space-between;
+    }
 
 &:hover,
     &:focus {
@@ -126,13 +132,41 @@ color: $main-color;
 &:active{
     background-color:$gold-color ;
     color:$main-color;
-}
+    }
 
+@media screen and(max-width: 767px){
+    width: 342px;
+margin-left: auto;
+margin-right: auto;
+    }
 }
 
 .gallery-button{
-    background-color: transparent;
-    border:1px solid #F8F8F8;;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+background-color: transparent;
+gap: 10px;
+width: 200px;
+height: 54px;
+left: 1107px;
+top: 1355px;
+border: 1px solid $main-color;
+border-radius: 16px;
+color: $main-color;
+margin-bottom: 24px;
+&:active{
+    background-color:$gold-color ;
+    color:$main-color;
+    border-color:$gold-color;
+    }
+
+@media screen and (max-width:767px) {
+    max-width: 168px;
+}
+    
 }
 
 .dish__button{
@@ -157,6 +191,8 @@ font-weight: 400;
 font-size: 16px;
 line-height: 22px;
 color: $main-color;
+margin-left: auto;
+margin-right: auto;
 
  &:hover,
     &:focus {
@@ -170,6 +206,11 @@ color: $main-color;
      color:$main-color;
 }
 
+@media screen and (max-width:767px) {
+width: 343px;
+
+margin-bottom: 16px;
+}
 }
 
 

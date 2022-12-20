@@ -45,7 +45,7 @@
         
     </ul>
 </nav>
-<button type="button" class="header-button" data-modal-open>view the menu</button>
+<button type="button" class="header-button">view the menu</button>
 </div>
 <button type="button" class="menu-open-button"> <img src="./svg/menu-button.svg" alt=""></button>
 </div>
@@ -101,39 +101,40 @@
         </div>
         </div>
     </section>
-            
-
-    
-   
-
-    <!-- 
         <section class="story">
+             <div class="container">
+            <div class="story-container">
             <h2 class="story-title">Short story about us</h2>
-            
-        <div class="container story-container">
-            <img src="./images/story/story-picture-desktop-1x.png" alt="story-image" class="story-image">
-        <div class="story-block">
+       
+            <div class="story-wrapper">
+            <div class="story-image">
+                <img src="./images/story/story-picture-desktop-1x.png" alt="restaurant room">
+            </div>
 <div class="story__text-block">
             <p class="story-text">When we chose a place for our restaurant, we really wanted it to be special for you. And we were lucky. We found the perfect place with an incredible terrace.
             <p class="story-text">When you step in our restaurant, you’ll not only be met with the sights and smells of our traditional recipes, but be greeted as a member of our family.</p>
             <p class="story-text">Using fresh, locally-sourced produce, seafood, and meat, we’re bringing culture to life in every bite.</p>
             <p class="story-text">We invite you!</p>
-</div>
-<div class="story-button__container">
-<button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+            <div class="story-button__container">
 <button type="button" class="story-button">view the menu</button>
+<button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+</div> 
+</div>
 </div>
 </div>
     </div>
     </section>
+    
     <section class="dishes">
         <div class="container">
-        <h2 class="dish__header header__indent">Specialty dishes</h2>
+            <div class="dish-wrapper">
+        <h2 class="dish__header">Specialty dishes</h2>
             <ul class="dish__list" >
             <li class="list work__item">
                 <a href="">
+                    <div class="dish-card">
 <picture>
-                            <source 
+                        <source 
                         srcset="
                         ./images/dishes/assortie-desktop-1x.png 1x,
                         ./images/dishes/assortie-desktop-2x.png 2x"
@@ -147,18 +148,19 @@
                         />
     
                         <img 
-                        class="team__image" 
+                        class="dish__image" 
                         src="./images/dishes/assortie-mobile-2x.png" 
                         alt="Dish" 
-                        width="200"
-                        height="200"/>
+                       
+                       />
                     </picture>
                     <div class="dish-header">
                         <h3 class="dish__card-header">Assorted meze</h3>
                         <h4 class="dish__price">$ 18.00</h4>
                         <p class="dish__text">Meze is a large set of snacks that allows you to get to know the flavors of Greek cuisine better</p>
                     <button type="button" class="dish__button">More details</button>
-                    </div>
+                </div>    
+                </div>
                 </a>
             </li>
             <li class="list work__item">
@@ -178,11 +180,11 @@
                         />
     
                         <img 
-                        class="team__image" 
+                        class="dish__image" 
                         src="./images/dishes/porcupines-mobile-2x.png" 
                         alt="Dish" 
-                        width="200"
-                        height="200"/>
+                        
+                        />
                     </picture>
                     <div class="dish-header">
                         <h3 class="dish__card-header">Porcupines</h3>
@@ -209,11 +211,11 @@
                         />
     
                         <img 
-                        class="team__image" 
+                        class="dish__image" 
                         src="./images/dishes/mousaka-mobile-2x.png" 
                         alt="Dish" 
-                        width="200"
-                        height="200"/>
+                        
+                        />
                     </picture>
                     <div class="dish-header">
                         <h3 class="dish__card-header">Moussaka</h3>
@@ -225,32 +227,32 @@
             </li>
         </ul>
     </div>
+    </div>
     </section>
+    
     <section class="gallery">
-            <div class="container">
+            <div class="gallery-container">
                 <h2 class="gallery__header">Gallery</h2>
             <ul class="gallery-list">
-                <li class="gallery__item"><button type="button" class="story-button">General info</button></li>
-                <li class="gallery__item"><button type="button" class="story-button">Веб-сайты</button></li>
-                <li class="gallery__item"><button type="button" class="story-button">Приложения</button></li>
-                <li class="gallery__item"><button type="button" class="story-button">Дизайн</button></li>
+                <li class="gallery__item"><button type="button" class="gallery-button">General info</button></li>
+                <li class="gallery__item"><button type="button" class="gallery-button">Interior</button></li>
+                <li class="gallery__item"><button type="button" class="gallery-button">Dishes</button></li>
+                <li class="gallery__item"><button type="button" class="gallery-button">Catering</button></li>
             </ul>        
             <ul class="grid">
-
                 <li class="list grid__item">
-                        
                         <picture>
                             <source 
                             srcset="
                             ./images/gallery/desktop/desktop-item1-1x.png 1x,
                             ./images/gallery/desktop/desktop-item1-2x.png 2x"
-                            media="(min-width: 1440px)"
+                            media="(min-width: 1200px)"
                             />
               
                             <source srcset="
                             ./images/gallery/mobile/mobile-item1-1x.png 1x,
                             ./images/gallery/mobile/mobile-item1-2x.png 2x"
-                            media="(min-width: 378px)"
+                            media="(min-width: 370px)"
                             />
         
                             <img 
@@ -267,18 +269,18 @@
                             srcset="
                             ./images/gallery/desktop/desktop-item2-1x.png 1x,
                             ./images/gallery/desktop/desktop-item2-2x.png 2x"
-                            media="(min-width: 1440px)"
+                            media="(min-width: 1200px)"
                             />
               
                             <source srcset="
                             ./images/gallery/mobile/mobile-item2-1x.png 1x,
                             ./images/gallery/mobile/mobile-item2-2x.png 2x"
-                            media="(min-width: 378px)"
+                            media="(min-width: 370px)"
                             />
         
                             <img 
                             src="./images/gallery/desktop/mobile-item2-2x.png" 
-                            alt="man and burger" 
+                            alt="work in restaurant" 
                             width="450"
                             height="294"/>
                         </picture>
@@ -291,18 +293,18 @@
                             srcset="
                             ./images/gallery/desktop/desktop-item3-1x.png 1x,
                             ./images/gallery/desktop/desktop-item3-2x.png 2x"
-                            media="(min-width: 1440px)"
+                            media="(min-width: 1200px)"
                             />
               
                             <source srcset="
                             ./images/gallery/mobile/mobile-item3-1x.png 1x,
                             ./images/gallery/mobile/mobile-item3-2x.png 2x"
-                            media="(min-width: 378px)"
+                            media="(min-width: 370px)"
                             />
         
                             <img 
                             src="./images/gallery/desktop/mobile-item3-2x.png" 
-                            alt="man and burger" 
+                            alt="work in restaurant" 
                             width="450"
                             height="294"/>
                         </picture>
@@ -315,13 +317,13 @@
                             srcset="
                             ./images/gallery/desktop/desktop-item4-1x.png 1x,
                             ./images/gallery/desktop/desktop-item4-2x.png 2x"
-                            media="(min-width: 1440px)"
+                            media="(min-width: 1200px)"
                             />
               
                             <source srcset="
                             ./images/gallery/mobile/mobile-item4-1x.png 1x,
                             ./images/gallery/mobile/mobile-item4-2x.png 2x"
-                            media="(min-width: 378px)"
+                            media="(min-width: 370px)"
                             />
         
                             <img 
@@ -331,25 +333,25 @@
                             height="294"/>
                         </picture>
                 </li>
-                <li class="list grid__item">
+                <li class="grid__item">
                         
                         <picture>
                             <source 
                             srcset="
                             ./images/gallery/desktop/desktop-item5-1x.png 1x,
                             ./images/gallery/desktop/desktop-item5-2x.png 2x"
-                            media="(min-width: 1440px)"
+                            media="(min-width: 1200px)"
                             />
               
                             <source srcset="
                             ./images/gallery/mobile/mobile-item5-1x.png 1x,
                             ./images/gallery/mobile/mobile-item5-2x.png 2x"
-                            media="(min-width: 378px)"
+                            media="(min-width: 370px)"
                             />
         
                             <img 
                             src="./images/gallery/desktop/mobile-item5-2x.png" 
-                            alt="man and burger" 
+                            alt="work in restaurant" 
                             width="450"
                             height="294"/>
                         </picture>
@@ -361,310 +363,56 @@
                             srcset="
                             ./images/gallery/desktop/desktop-item6-1x.png 1x,
                             ./images/gallery/desktop/desktop-item6-2x.png 2x"
-                            media="(min-width: 1440px)"
+                            media="(min-width: 1200px)"
                             />
               
-                            <source srcset="
+                            <source 
+                            srcset="
                             ./images/gallery/mobile/mobile-item6-1x.png 1x,
                             ./images/gallery/mobile/mobile-item6-2x.png 2x"
-                            media="(min-width: 378px)"
+                            media="(min-width: 370px)"
                             />
         
                             <img 
                             src="./images/gallery/desktop/mobile-item6-2x.png" 
-                            alt="man and burger" 
+                            alt="work in restaurant" 
                             width="450"
                             height="294"/>
                         </picture>
                 </li>
             </ul>
+            <ul class="mark-list">
+                <li class="mark-item"> <img src="./images/gallery/mobile/arrow-back.png" alt="arrow-back"> </li>
+                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 1.png" alt="elipse"></li>
+                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
+                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
+                <li class="mark-item"><img src="./images/gallery/mobile/arrow-forward.png" alt="arrow-fwd"></li>
+            </ul>
         </div>
         </section>
+
+        
     <section class="reserve">
         <div class="container">
-        <h2 class="team__header header__indent">Наша команда</h2>
-        <ul class="team__list">
-            <li class="team__item"> 
-                <a href="">
-                    <picture>
-                        <source 
-                        srcset="
-                        ./images/team/igor-desk-1x.jpg 1x,
-                        ./images/team/igor-desk-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/igor-tab-1x.jpg 1x, 
-                        ./images/team/igor-tab-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/igor-mob-1x.jpg 1x, 
-                        ./images/team/igor-mob-2x.jpg 2x"
-                        media="(min-width: 320px)"
-                        />
-    
-                        <img 
-                        class="team__image" 
-                        src="./images/team/igor-mob-2x.jpg" 
-                        alt="Product_Designer" 
-                        width="450"
-                        height="460"/>
-                    </picture>
-                </a>
-                <div class="card-header">
-                <h3 class="work__header">Игорь Демьяненко</h3>
-                <p class="team-workers">Product Designer</p>
-                <ul class="social__list">
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-instagram-2">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-twitter">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-facebook">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-linkedin">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                </ul>
-            </div> 
-            </li>
-            <li class="team__item">
-                <a href=""> 
-                    <picture>
-                        <source 
-                        srcset="
-                        ./images/team/olga-desk-1x.jpg 1x,
-                        ./images/team/olga-desk-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/olga-tab-1x.jpg 1x, 
-                        ./images/team/olga-tab-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/olga-mob-1x.jpg 1x, 
-                        ./images/team/olga-mob-2x.jpg 2x"
-                        media="(min-width: 320px)"
-                        />
-    
-                        <img 
-                        class="team__image" 
-                        src="/images/team/olga-mob-2x.jpg" 
-                        alt="Frontend_developer" 
-                        width="450"
-                        height="460"/>
-                    </picture>
-                </a> 
-            <div class="card-header">
-                <h3 class="work__header">Ольга Репина</h3>
-                <p class="team-workers">Frontend Developer</p>
-                <ul class="social__list">
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-instagram-2">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-twitter">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-facebook">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-linkedin">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                </ul>
+            <div class="story-container">
+            <div class="story-wrapper">
+            <div class="story-image">
+                <img src="./images/reserve/desktop/reserve-main-pic-1x.png" alt="restaurant room">
             </div>
-            </li>
-            <li class="team__item">
-                <a href=""> 
-                    <picture>
-                        <source 
-                        srcset="
-                        ./images/team/nikolaj-desk-1x.jpg 1x,
-                        ./images/team/nikolaj-desk-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/nikolaj-tab-1x.jpg 1x, 
-                        ./images/team/nikolaj-tab-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/nikolaj-mob-1x.jpg 1x, 
-                        ./images/team/nikolaj-mob-2x.jpg 2x"
-                        media="(min-width: 320px)"
-                        />
-    
-                        <img 
-                        class="team__image" 
-                        src="/images/team/nikolaj-mob-2x.jpg" 
-                        alt="Marketing" 
-                        width="450"
-                        height="460"/>
-                    </picture>
-                </a> 
-            <div class="card-header">
-                <h3 class="work__header">Николай Тарасов</h3>
-                <p class="team-workers">Marketing</p>
-                <ul class="social__list">
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-instagram-2">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-twitter">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-facebook">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-linkedin">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                </ul>
-            </div>
-            </li>
-            <li class="team__item">
-                <a href=""> 
-                    
-                    <picture>
-                        <source 
-                        srcset="
-                        ./images/team/mihail-desk-1x.jpg 1x,
-                        ./images/team/mihail-desk-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/mihail-tab-1x.jpg 1x, 
-                        ./images/team/mihail-tab-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        />
-    
-                        <source srcset="
-                        ./images/team/mihail-mob-1x.jpg 1x, 
-                        ./images/team/mihail-mob-2x.jpg 2x"
-                        media="(min-width: 320px)"
-                        />
-    
-                        <img 
-                        class="team__image" 
-                        src="./images/team/mihail-mob-2x.jpg" 
-                        alt="Frontend_developer" 
-                        width="450"
-                        height="460"/>
-                    </picture>
-
-                </a> 
-                <div class="card-header">
-                <h3 class="work__header">Михаил Ермаков</h3>
-                <p class="team-workers">UI Designer</p>
-                <ul class="social__list">
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-instagram-2">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-twitter">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-facebook">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="social__item .list">
-                        <a class="social__links" href="">
-                        <svg class="worker-soc-icon-team" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-linkedin">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                </ul>
-            </div>
-            </li>
-        </ul>
-        </div>
-    </section>
+<div class="story__text-block">
+            <p class="story-text">When we chose a place for our restaurant, we really wanted it to be special for you. And we were lucky. We found the perfect place with an incredible terrace.
+            <p class="story-text">When you step in our restaurant, you’ll not only be met with the sights and smells of our traditional recipes, but be greeted as a member of our family.</p>
+            <p class="story-text">Using fresh, locally-sourced produce, seafood, and meat, we’re bringing culture to life in every bite.</p>
+            <p class="story-text">We invite you!</p>
+            <div class="story-button__container">
+<button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+</div> 
+</div>
+</div>
+</div>
+    </div>
+</section>
+    <!-- 
     <section class="client">
         <div class="container">
             <h2 class="client__header header__indent">Постоянные клиенты</h2>

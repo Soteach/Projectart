@@ -1,33 +1,30 @@
-.dishes{
-    padding: 100px 235px;
-    
-    &__head {
-        @include fontStyle (36px, 700, 0.03em, 1.17);
-        text-align: center;
-        color: var(--header-color);
-    }
+.dish__header{
+    margin-bottom: 40px;
+    text-align: center;
+    @media screen and (max-width:767px) {
+    margin-bottom: 24px;
+}
+}
 
-   @include mindesktop {
-        display: none;
-    }
+.dish__image{
+    max-width: 343px;
+}
 
-    
+.dish-wrapper{
+padding: 100px 235px;
+@media screen and (max-width:1470px) {
+padding: 60px 16px;
+}
 }
 
 .dish__list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 16px;
 }
 
-.header__indent {
 
-    @include desktop {
-        margin-bottom: 50px;
-    }
-    
-}
 
 .dish__header{
 font-family: 'GFS Neohellenic';
@@ -89,7 +86,7 @@ justify-content: center;
 }
 
 .dish__card-header{
-    width: 301px;
+width: 301px;
 height: 38px;
 font-family: 'GFS Neohellenic';
 font-style: normal;

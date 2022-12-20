@@ -1,5 +1,8 @@
-.gallery{
+.gallery-container{
     padding: 100px 70px;
+        @media screen and (max-width:767px) {
+    padding: 60px 16px;
+}
 }
 
 .gallery__header{
@@ -19,45 +22,42 @@ color: $main-color;
 
 }
 
+
+
 .gallery-list{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:767px) {
+    gap:6px;
 }
 
-// .gallery__item.gallery__item{
-//     margin-right: 12px;
-// }
+}
 
 .grid{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+    @media screen and (max-width:767px) {
+    gap:6px;
+    margin-bottom: 24px;
+}
 }
     
+.mark-list{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
 
-    
-//     @include tablet {
-//         :last-child {
-//             margin-right: auto;
-//         }
-//     }
-    
-// @include mindesktop{
-//     &__item:first-child .cards-footer {
-//         min-height: 144px;
-//     }
-// }
-    
-
-// @include desktop {
-//     &__item:first-child .cards-footer {
-//         max-height: 110px;
-//     }
-
-// }
-// }
 
 .product__title {
     @include fontStyle (18px, 700, 0.06em, 2);

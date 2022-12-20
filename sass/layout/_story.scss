@@ -1,14 +1,30 @@
 
 .story {
     background-color:$blue-color ;
-    @include desktop{
-    padding-top:94px;
-    padding-bottom: 94px;
-    }
+   
 }
 
 .story-container{
-       display: flex;
+      padding: 100px 70px;
+      position: relative;
+      @media screen and (max-width:767px) {
+    padding: 60px 16px;
+}
+}
+
+.story-wrapper{
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width:767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+.story-image{
+    @media screen and (max-width:767px) {
+margin-bottom: 24px;}
 }
 
 .story-title{
@@ -23,32 +39,49 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-bottom: 40px;
+ @media screen and (max-width:767px) {
+    width: 245px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
 
 }
-
-.story-block{
-    width: 420px;
-    margin-top: 60px;
-    margin-left: 20px;
-    
 }
 
 .story__text-block{
     display: flex;
     flex-direction: column;
+    max-width: 90%;
+    margin-left: 20px;
+    width: 420px;
+    @media screen and (max-width:767px) {
+    min-width: 343px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
 }
-
-.story-image{
-    width: 805px;
 }
 
 .story-text{
     color:$main-color;
-    display: flex;
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    @media screen and (max-width:767px) {
+    
+    font-size: 14px;
+    line-height: 20px;
+}
 }
 
 
 .story-button__container{
     display: flex;
+    @media screen and (max-width:767px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 }
