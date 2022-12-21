@@ -3,125 +3,133 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-
-    @include minimize {
-        background-image:
-        url(../../img/desktop/white-concrete-bg.jpg);
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../../img/desktop/white-concrete-bg.jpg);
-    }
 }
 
-@include mobile {
-    background-image:
-    url(../../img/desktop/white-concrete-bg.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+.reserve-container{
+      padding: 100px 70px;
+      position: relative;
+      @media screen and (max-width:767px) {
+    padding: 60px 16px;
 }
 }
 
-    @include tablet {
-    background-image:
-    url(../../img/desktop/white-concrete-bg.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image:url(../../img/desktop/white-concrete-bg.jpg);
-}
-}
-
-@include desktop {
-    background-image:
-    url(../../img/desktop/white-concrete-bg.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image:url(../../img/desktop/white-concrete-bg.jpg);
-    }
-}
-    
-}
-
-.team__list {
+.reserve-wrapper{
     display: flex;
+    align-items: center;
+
+    @media screen and (max-width:767px) {
     flex-wrap: wrap;
-    gap: 30px;
-}
-
-.team__item {
-    width: 100%;
-    min-height: 368px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
-
-    @media screen and (min-width:768px) {
-        width: calc((100% - 30px)/2);
-    }
-    
-    @media screen and (min-width:1200px){
-        width: calc((100% - 90px)/4)
-    }
-}
-
-.team__image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.card-header {
-    margin: 0;
-    padding:30px 0;
-    background-color: var(--main-white-color);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.team__header{
-    @include fontStyle (36px, 700, 0.03em, 1.17);
-    @media screen and (max-width:480px){
-        @include fontStyle (28px, null, null, null);
-    }
-
-    @media screen and (min-width:480px){
-        @include fontStyle (28px, null, null, null);
-    }
-
-    @media screen and (min-width:1200px){
-        @include fontStyle (36px, null, null, null);
-    }
-
-    text-align: center;
-    color: var(--header-color);
-}
-
-.work__header{
-    @include fontStyle (16px, 500, 0.03em, 1.18);
-    text-align: center;
-    margin-bottom: 10px;
-    color: var(--header-color);
-}
-
-.team-workers{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.social__list {
-    display: flex;
     justify-content: center;
 }
+}
 
-.social__item{
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    border-radius: 50%;
-    :last-child{
-        margin-right: 0;
-    }
+.reserve-image{
+    @media screen and (max-width:767px) {
+margin-bottom: 24px;}
+}
+
+.reserve-title{
+    color:$main-color;
+    text-transform: uppercase;
+    font-family: 'GFS Neohellenic';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+display: flex;
+align-items: center;
+ @media screen and (max-width:767px) {
+    width: 245px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+
+}
+}
+
+.reserve__form{
+    width: 593px;
+    height: 488.5px;
+    background-color:$blue-color;
+    padding: 64px 20px;
+}
+
+
+.reserve-text{
+    color:$main-color;
+    margin-bottom: 32px;
+    font-family: 'GFS Neohellenic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    @media screen and (max-width:767px) {
+    
+    font-size: 14px;
+    line-height: 20px;
+}
+}
+
+
+.reserve-button__container{
+    display: flex;
+    @media screen and (max-width:767px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+}
+
+.reserve-title{
+font-family: "GFS Neohellenic";
+font-size: 36px;
+font-weight: 400;
+line-height: 42px;
+vertical-align: Center;
+text-transform: uppercase;
+margin-bottom: 16px;
+color:$main-color;
+}
+
+.reserve-input{
+    width: 240px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $main-color;
+    padding: 10px;
+    padding-left: 30px;
+    color:rgba(248, 248, 248, 0.6);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.reserve-input::placeholder{
+    color:rgba(248, 248, 248, 0.6);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+
+.input-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+    margin-bottom: 46px;
+}
+
+.input-wrap{
+    position: relative;
+}
+
+.form-icon{
+position: absolute;
+top:10px;
 }
