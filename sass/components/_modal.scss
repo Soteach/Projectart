@@ -31,6 +31,12 @@
     
 }
 
+.modal-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal-title{
 font-family: "GFS Neohellenic";
 font-size: 36px;
@@ -84,20 +90,18 @@ margin-bottom: 50px;
 }
 
 .modal-input {
-    width: 45%;
-    margin-bottom: 46px;
-    height: 40px;
+    width: 240px;
+    background-color: transparent;
+    border: none;
     border-bottom: 1px solid $main-color;
-    border-radius: 4px;
-    background-color:var(--main-white-color);
-    padding-left: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: var(--header-color);
-    outline: transparent;
-    @include tranSition ();
-    margin-top: 4px;
-    
+    padding: 10px;
+    padding-left: 30px;
+    color:rgba(248, 248, 248, 0.6);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
     &:hover,
     &:focus
     {

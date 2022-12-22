@@ -1,8 +1,11 @@
+
+
 .gallery-container{
     padding: 100px 70px;
         @media screen and (max-width:767px) {
     padding: 60px 16px;
 }
+
 }
 
 .gallery__header{
@@ -40,9 +43,12 @@ color: $main-color;
 
 .grid{
     display: flex;
+    max-width: 1300px;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 32px;
     @media screen and (max-width:767px) {
     gap:6px;

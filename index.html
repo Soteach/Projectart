@@ -86,8 +86,8 @@
             <div class="container">
                 <div class="hero-wrapper">
                     
-                <div class="hero-container">
-<div class="header-title">
+                <!-- <div class="hero-container"> -->
+        <div class="header-title">
                 <img class="hero-logo" src="./img/desktop/logo desktop.svg" alt="logo">
         <h1 class="hero__header">Artemis</h1>
         <p class="hero-text">Greek Restaurant</p>
@@ -95,17 +95,17 @@
         <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
     <img class="mobile-background-picture" src="./images/hero/desktop/hero-1x.png"/>    
     </div>
-    <div class="hero-image"></div>
+    <div class="hero-image">
+    </div>
         </div>
-        </div>
+        <!-- </div> -->
         </div>
         </div>
     </section>
         <section class="story">
-             <div class="container">
+             
             <div class="story-container">
             <h2 class="story-title">Short story about us</h2>
-       
             <div class="story-wrapper">
             <div class="story-image">
                 <img src="./images/story/story-picture-desktop-1x.png" alt="restaurant room">
@@ -119,7 +119,6 @@
 <button type="button" class="story-button">view the menu</button>
 <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
 </div> 
-</div>
 </div>
 </div>
     </div>
@@ -390,14 +389,15 @@
             </ul>
         </div>
         </section>
-
         
     <section class="reserve">
-        <div class="container">
             <div class="reserve-container">
             <div class="reserve-wrapper">
+                <!-- <div class="reserve-mob-image">
+                <img src="./images/reserve/mobile/reserve-main-mob-1x.png" alt="restaurant room">
+            </div> -->
             <div class="reserve-image">
-                <img src="./images/reserve/desktop/reserve-main-pic-1x.png" alt="restaurant room">
+                <!-- <img src="./images/reserve/desktop/reserve-main-pic-1x.png" alt="restaurant room"> -->
             </div>
 <div class="reserve__form">
     <h2 class="reserve-title">Reserve table in restaurant</h2>
@@ -444,69 +444,63 @@
         placeholder="Time" 
         >
     </div>
+        <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+
     </form>
 
-    <div class="reserve-button__container">
-<button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
-</div> 
-    </div>
-
-
+    <!-- <div class="reserve-button__container">
+</div> -->
 </div>
 </div>
-    </div>
+</div>
 </section>
-    <!-- 
-    <section class="client">
-        <div class="container">
-            <h2 class="client__header header__indent">Постоянные клиенты</h2>
-        <ul class="client__list">
-            <li class="client__item">
-                <a href="" class="client__link">
-                <svg class="client__icon">
-                    <use href="./images/clients.svg#icon-group-5"></use>
-                </svg>
-            </a>
-            </li>
-            <li class="client__item">
-                <a href="" class="client__link">
-                <svg class="client__icon">
-                    <use href="./images/clients.svg#icon-group-6"></use>
-                </svg>
-            </a>
-            </li>
-            <li class="client__item">
-                <a href="" class="client__link">
-                <svg class="client__icon">
-                    <use href="./images/clients.svg#icon-group-7"></use>
-                </svg>
-            </a>
-            </li>
-            <li class="client__item">
-                <a href="" class="client__link">
-                <svg class="client__icon">
-                    <use href="./images/clients.svg#icon-group-8"></use>
-                </svg>
-            </a>
-            </li>
-            <li class="client__item">
-                <a href="" class="client__link">
-                <svg class="client__icon">
-                    <use href="./images/clients.svg#icon-group-9"></use>
-                </svg>
-            </a>
-            </li>
-            <li class="client__item">
-                <a href="" class="client__link">
-                <svg class="client__icon">
-                    <use href="./images/clients.svg#icon-company-six"></use>
-                </svg>
-            </a>
-            </li>
-        </ul>
+   <section class="contacts">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contacts">
+                <p class="contacts-text">How to reach us</p>
+                <a href="tel:+38 (096) 330-05-33" class="phone">+38 (096) 330-05-33</a>
+                <a href="artemis.restaurant@mail.com" class="mail">artemis.restaurant@mail.com</a>
+            </div>
+            <div class="adress">
+                <p class="contacts-text">Where To Find Us</p>
+                <adress>Kyiv, st. Ivan Franko, 435</adress>
+            </div>
+            <div class="open-hours">
+            <p class="contacts-text">Open Hours</p>
+            <ul class="hours-list">
+                <li class="hours-item">Monday - Thursday 11:00am - 09:00pm</li>
+                <li class="hours-item">Friday 11:00am - 10:00pm</li>
+                <li class="hours-item">Saturday 03:00pm - 10:00pm</li>
+                <li class="hours-item">Sunday 12:00pm - 09:00pm</li>
+            </ul>
+            </div>
+            <div class="soc-networks">
+                <ul class="soc-list">
+                    <li class="soc-items"> 
+                        <a href="soc-links">
+                        <svg class="instagram-icon" width="46" height="46">
+                            <use href="./images/icons/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                    <li class="soc-items">
+                        <a href="soc-links">
+                        <svg class="instagram-icon" width="46" height="46">
+                            <use href="./images/icons/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </div>
+   </section>
+
+   </section>
+    
     </main>
+     <!-- 
     <footer class="footer">
         <div class="container contact-wrap">
             <div class="footer-block">
@@ -588,6 +582,7 @@
         </button>
         <h2 class="modal-title">Reserve table in restaurant</h2>
         <p class="modal-text">Book a table for an unforgettable evening</p>
+        <div class="modal-wrapper">
         <form>
             <div class="modal-field">
                 <input type="tel"
@@ -640,6 +635,7 @@
            
         </form>
          <button class="modal-button pointer" type="submit">Book a table</button>
+    </div>
     </div>
 </div>
 
