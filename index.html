@@ -393,11 +393,8 @@
     <section class="reserve">
             <div class="reserve-container">
             <div class="reserve-wrapper">
-                <!-- <div class="reserve-mob-image">
-                <img src="./images/reserve/mobile/reserve-main-mob-1x.png" alt="restaurant room">
-            </div> -->
+              
             <div class="reserve-image">
-                <!-- <img src="./images/reserve/desktop/reserve-main-pic-1x.png" alt="restaurant room"> -->
             </div>
 <div class="reserve__form">
     <h2 class="reserve-title">Reserve table in restaurant</h2>
@@ -447,18 +444,16 @@
         <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
 
     </form>
-
-    <!-- <div class="reserve-button__container">
-</div> -->
 </div>
 </div>
 </div>
 </section>
    <section class="contacts">
-    <div class="container">
+    <div class="contacts-container">
+        <h2 class="contacts-header">Contacts</h2>
         <div class="contact-wrapper">
-            <div class="contacts">
-                <p class="contacts-text">How to reach us</p>
+            <div class="adress">
+                <p class="contacts-text">How To Reach Us</p>
                 <a href="tel:+38 (096) 330-05-33" class="phone">+38 (096) 330-05-33</a>
                 <a href="artemis.restaurant@mail.com" class="mail">artemis.restaurant@mail.com</a>
             </div>
@@ -468,22 +463,25 @@
             </div>
             <div class="open-hours">
             <p class="contacts-text">Open Hours</p>
+            <div class="work-hours">
+            <ul class="days-list">
+                <li class="hours-item">Monday - Thursday</li>
+                <li class="hours-item">Friday</li>
+                <li class="hours-item">Saturday</li>
+                <li class="hours-item">Sunday</li>
+            </ul>
             <ul class="hours-list">
-                <li class="hours-item">Monday - Thursday 11:00am - 09:00pm</li>
-                <li class="hours-item">Friday 11:00am - 10:00pm</li>
-                <li class="hours-item">Saturday 03:00pm - 10:00pm</li>
-                <li class="hours-item">Sunday 12:00pm - 09:00pm</li>
+                <li class="hours-item">11:00am - 09:00pm</li>
+                <li class="hours-item">11:00am - 10:00pm</li>
+                <li class="hours-item">03:00pm - 10:00pm</li>
+                <li class="hours-item">12:00pm - 09:00pm</li>
             </ul>
             </div>
+            </div>
             <div class="soc-networks">
+                <p class="contacts-text">Read Us</p>
+                
                 <ul class="soc-list">
-                    <li class="soc-items"> 
-                        <a href="soc-links">
-                        <svg class="instagram-icon" width="46" height="46">
-                            <use href="./images/icons/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
                     <li class="soc-items">
                         <a href="soc-links">
                         <svg class="instagram-icon" width="46" height="46">
@@ -491,6 +489,14 @@
                         </svg>
                     </a>
                     </li>
+                    <li class="soc-items"> 
+                        <a href="soc-links">
+                        <svg class="instagram-icon" width="46" height="46">
+                            <use href="./images/icons/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                    
                 </ul>
             </div>
         </div>
@@ -500,144 +506,81 @@
    </section>
     
     </main>
-     <!-- 
+     
     <footer class="footer">
-        <div class="container contact-wrap">
             <div class="footer-block">
-        <div class="footer__lp">
-        <a class="footer__logo" href="">Web<span class="footer__logo--part">Studio</span></a>
-        <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-        <a class="link footer__mail" href="mailtohtpps/info@devstudio.com">info@devstudio.com</a>
-        <a class="link footer__phone" href="tel:+380961111111">+38 096 111 11 11</a>
-        </div>
-        <div class="social-network-footer">
-        <p class="join join__indent">присоединяйтесь</p>
-        <ul class="social-network-list">
-                    <li class="soc-item .list">
-                        <a class="social-links" href="">
-                        <svg class="worker-soc-icon" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-instagram-2">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="soc-item">
-                        <a class="social-links" href="">
-                        <svg class="worker-soc-icon" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-twitter">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="soc-item .list">
-                        <a class="social-links" href="">
-                        <svg class="worker-soc-icon" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-facebook">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                    <li class="soc-item .list">
-                        <a class="social-links" href="">
-                        <svg class="worker-soc-icon" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-linkedin">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                </ul>
-            </div>
-            </div>
-            <div class="footer-form-container">
-                <form class="footer-form">
-                <div class="footer-mail-input">
-                    
-                    <label for="footer-mail">Подпишитесь на рассылку</label>
-                    <input 
-                    class="sign-helper" 
-                    type="text" 
-                    name="footer-mail" 
-                    id="footer-mail" 
-                    placeholder="E-mail"
-                    title="IvanSulyma@gmail.com">
-                </div>
-                <button type="submit" class="sign-button">Подписаться 
-                    <svg class="footer-form-icon" width="24px" height="24px">
-                    <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-                </button>
-                </form>
-            </div>
+        <a  href="index.html">
+    <img class="footer-logo" src="./img/desktop/logo desktop.svg" alt="logo">
+</a>
+<div class="footer-lp">
+    <p class="footer-text">© 2022 Artemis. Made with ♥</p>
+    <p class="footer-text">Terms and conditions</p>
+    <p class="footer-text">Privacy statement</p>
+</div>
 </div>
 </footer>
--->
+
 <!-- "backdrop is-hidden" -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
              <button class="modal-close-button" type="button" data-modal-close>
-            <svg class="modal-close-icon" width="21" height="21" >
-                <use href="./images/symbol-defs.svg#icon-close-black">
+            <svg class="modal-close-icon" width="40" height="40" >
+                <use href="./images/icons/icons.svg#icon-modal-close-button">
                 </use>
             </svg>
         </button>
-        <h2 class="modal-title">Reserve table in restaurant</h2>
-        <p class="modal-text">Book a table for an unforgettable evening</p>
-        <div class="modal-wrapper">
-        <form>
-            <div class="modal-field">
-                <input type="tel"
-                class="modal-input"  
-                name="user-name" 
-                placeholder="Telephone number" 
-                required 
-                minlength="2" 
-                title="Telephone number"
-                autofocus
-                />
-                <svg class="modal-icon" width="21" height="21">
-                    <use href="./svg/modal-phone.svg"></use>
-                </svg>
-            </div>
-            <div class="modal-field">
-            <input type="number" 
-            class="modal-input" 
-            name="user-tel" 
-            placeholder="Number of guests" 
-            required minlength="2" 
-            title="Number of guests" /> 
-            <svg class="modal-icon" width="21" height="21">
-                <use href="./svg/modal-quest.svg"></use>
-            </svg>   
-            </div>
-            <div class="modal-field">
-            <input type="date" 
-            class="modal-input"  
-            name="user-date" 
-            placeholder="Date" 
-            required minlength="2" 
-            title="Date" />
-            <svg class="modal-icon" width="21" height="21">
-                <use href="./svg/modal-date.svg"></use>
-            </svg>
-            </div>
-            <div class="modal-field">
-            <input type="time" 
-            class="modal-input"  
-            name="modal-clock" 
-            placeholder="Time" 
-            required minlength="2" 
-            title="Time" />
-            <svg class="modal-icon" width="21" height="21">
-                <use href="./svg/modal-clock.svg"></use>
-            </svg>
-            </div>
-            
-           
-        </form>
-         <button class="modal-button pointer" type="submit">Book a table</button>
+        <div class="modal__form">
+    <h2 class="modal-title">Reserve table in restaurant</h2>
+    <p class="modal-text">Book a table for an unforgettable evening</p>
+    <form class="input-form" action="">
+    <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-phone" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="tel" 
+        placeholder="Telephone number" 
+        >
     </div>
+
+        <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-pupil" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="number" 
+        placeholder="Number of guests" 
+        >
     </div>
+    <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-date" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="text" 
+        placeholder="Date" 
+       >
+    </div>
+    <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-time" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="text" 
+        placeholder="Time" 
+        >
+    </div>
+        <button  class="hero__button pointer" type="button">Book a table</button>
+
+    </form>
 </div>
+</div>
+</div>
+
 
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script> 

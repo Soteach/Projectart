@@ -67,6 +67,18 @@ color: $blue-color;
 
 }
 
+.modal-close-button {
+    width: 60px;
+    height: 60px;
+    color:$gold-color;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:transparent;
+    border: none;
+}
+
 .hero__button {
 border: none;
 height: 54px;

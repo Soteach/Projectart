@@ -1,294 +1,35 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--hero-color);
-
-    @include minimize {
-        padding: 60px 15px;
-    }
-
-    @include tablet {
-        padding: 60px 75px;        
-    }
-        
-    @include desktop {
-            display: block;
-            padding: 60px 0;
-        }
-
-    a{
-        display: flex;
-        justify-content: center;
-    }
-    
-    &__mail {
-    font-family: 'Roboto', monotype;
-    @include fontStyle (14px, null, 0.03em, 1.7);
-    color: rgba(255, 255, 255, 0.6);
-    @include tranSition ();
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-
-    @include mintablet {
-        text-align: center;
-        margin-bottom: 8px;
-    }
-
-}
-
-    &__phone {
-        font-family: 'Roboto', monotype;
-    @include fontStyle (14px, null, 0.03em, 1.7);
-    color: rgba(255, 255, 255, 0.6);
-    @include tranSition ();
-    text-align: center;
-    margin-bottom: 8px;
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-
-    @include mintablet {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-    
+    background-color: $blue-color;
+    padding: 100px 70px;
+    @media screen and (max-width:767px) {
+padding: 60px 16px;
 }
 }
 
-.contact-wrap.container {
+
+.footer-logo{
+    width: 120px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.footer-lp{
     display: flex;
-    align-items: baseline;
-
-    @include mindesktop {
-        display: block;
-        max-width: 100%
-    }
-
-    @include desktop {
-        display: flex;
-    }
+    justify-content: space-between;
+    @media screen and (max-width:767px) {
+flex-direction: column;
+align-items: center;
+gap:24px;
 }
-
-address {
-    @include fontStyle (14px, null, 0.03em, 1.7);
-    font-style:normal;
-    color: var(--main-white-color);
-
-    :hover,:focus {
-        color: var(--accent-color);
-    }
-
-    @include mintablet {
-        text-align: center;
-        margin-bottom: 8px;
-    }
-
-    @include mindesktop {
-        text-align: center;
-        margin-bottom: 8px;
-    }
-    
-}
-
-.social-network-footer{
-    display: flex;
-    flex-direction: column;
-
-    @include minimize {
-        margin: 0;
-    }
-
-    @include desktop {
-        margin-right: 93px;
-        align-items: flex-start;
-    }
-    
-}
-
-.join{
-    @include fontStyle (14px, 700, 0.03em, 1.14);
-    text-transform: uppercase;
-    color: var(--main-white-color);
-
-
-
-    &__indent {
-        margin-bottom: 20px;
-        text-align: center;
-    }
 
 }
 
-.social-network-list{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 60px;
-    
-    @include desktop {
-        justify-content: center;
-        margin-bottom: 0;
-    }
-
-}
-
-.social-network-list .social-links {
-padding: 12px;
-width: 44px;
-height: 44px;
-display: block;
-border-radius: 50%;
-background-color: rgba(255, 255, 255, 0.1);
-}
-
-.worker-soc-icon {
-    fill: var(--main-white-color);
-}
-
-.social-links {
-    @include tranSition ();
-}
-
-.social-links:hover,
-.social-links:focus{
-    background-color: var(--accent-color);
-}
-
-.social-links:hover .worker-soc-icon
-{
-    fill:#FFFFFF;
-}
-
-.social-links:focus .worker-soc-icon {
-    fill:#FFFFFF;
-}
-
-.footer-link:hover{
-    color:var(--accent-color)
-}
-
-
-.footer-block {
-
-    @include tablet {
-    display: flex;
-    justify-content: space-between; 
-    padding-bottom: 60px;    
-    align-items: baseline;
-
-    @include desktop {
-        padding-bottom: 0;
-    }
-}
-}
-
-.footer__lp {
-    @include desktop {
-    margin-right: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-}
-    
-
-
-/* ----------------------------------FOOTER FORM--------------------- */
-.footer-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-    @include desktop {
-        flex-direction: row;
-        align-items: flex-end;
-        flex-wrap: nowrap;
-    }
-    
-}
-
-.footer-mail-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &.helper::placeholder {
-        color: rgba(255, 255, 255, 0.6);
-    }
-
-    @include tablet {
-        margin-bottom: 20px;
-    }
-
-    @include desktop {
-        width: 380px;
-        margin-bottom: 0;
-        align-items: flex-start;
-    }
-
-    & label {
-        @include fontStyle (14px, 700, 0.03em, 1.14);
-        text-transform: uppercase;
-        color: var(--main-white-color);
-        margin-bottom: 20px;
-    
-    }
-
-}
-
-.sign-helper {
-    padding-top: 15px;
-    padding-right: 16px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    width: 450px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: transparent;
-    color: var(--main-white-color);
-    cursor: pointer;
-    
-    @include minimize {
-        width: 130%;
-        align-items: center;
-    }
-
-    @include mobile {
-        width: 450px;
-    }
-
-    @include mintablet {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    @include desktop {
-        max-width: 360px;
-    }
-}
-
-.sign-button {
-    padding: 10px 28px;
-    display: flex;
-    align-items: center;
-    @include fontStyle (16px, 700, 0.06em, 1.9);
-    color: var(--main-white-color);
-    background-color: var(--accent-color);
-    border: 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-
-.footer-form-icon {
-    margin-left: 10px;
+.footer-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-color;
 }
