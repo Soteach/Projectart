@@ -569,43 +569,33 @@ img {
 }
 
 .wrapper {
-  background-image: url(../../img/desktop/white-concrete-bg.jpg);
+  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 479px) {
   .wrapper {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
   }
 }
 @media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
   .wrapper {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
   }
 }
 @media screen and (min-width: 480px) {
   .wrapper {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .wrapper {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .wrapper {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .wrapper {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
   }
 }
 @media screen and (min-width: 1440px) {
   .wrapper {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
@@ -869,48 +859,38 @@ img {
 }
 
 .dishes {
-  background-image: url(../../img/desktop/white-concrete-bg.jpg);
+  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 479px) {
   .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
   }
 }
 @media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
   .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
   }
 }
 @media screen and (min-width: 480px) {
   .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
   }
 }
 @media screen and (min-width: 1440px) {
   .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-desktop-1x.png);
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .dishes {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
   }
 }
 
@@ -965,9 +945,39 @@ img {
 }
 
 .reserve {
-  background-image: url(../../img/desktop/white-concrete-bg.jpg);
+  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 479px) {
+  .reserve {
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+  }
+}
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .reserve {
+    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
+  }
+}
+@media screen and (min-width: 480px) {
+  .reserve {
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .reserve {
+    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reserve {
+    background-image: url(../../images/background/white-concrete-bg-desktop-1x.png);
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .reserve {
+    background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+  }
 }
 
 .reserve-container {
@@ -1956,4 +1966,125 @@ button {
 
 .soc-list {
   display: flex;
+}
+
+.about {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: right;
+}
+
+.mobile-background {
+  display: block;
+  height: 100%;
+}
+
+.about-wrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.about-image {
+  min-width: 780px;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: -1%;
+  background-image: url(../../images/about/desktop/about-hero-main-1x.png);
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .about-image {
+    background-image: url(../../images/about/desktop/about-hero-main-2x.png);
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-image {
+    display: none;
+  }
+}
+
+.about-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    padding-top: 183px;
+    padding-bottom: 223px;
+  }
+}
+
+.hero-logo {
+  width: 120px;
+  height: 100px;
+  z-index: 1;
+}
+
+.about__header {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: uppercase;
+  color: #071E34;
+  margin-bottom: 4px;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .about__header {
+    color: #E5A11E;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__header {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.about-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #071E34;
+  margin-bottom: 24px;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .about-text {
+    color: #E5A11E;
+  }
+}
+
+.about-second-header {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #071E34;
+  margin-bottom: 32px;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .about-second-header {
+    color: #E5A11E;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-second-header {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }/*# sourceMappingURL=main.css.map */

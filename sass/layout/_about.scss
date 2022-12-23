@@ -1,40 +1,5 @@
-.wrapper{
-    background-image:url(../../images/background/white-concrete-bg-desktop-2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    @include minimize {
-        background-image:
-        url(../../images/background/white-concrete-bg-mobile-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-    }
-}
 
-@include mobile {
-    background-image:
-    url(../../images/background/white-concrete-bg-mobile-1x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-}
-}
-
-@include desktop {
-    background-image:
-    url(../../images/background/white-concrete-bg-desktop-2x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image:url(../../img/desktop/white-concrete-bg.jpg);
-    }
-}
-}
-
-.hero {
+.about {
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: right;
@@ -48,28 +13,35 @@
 
 }
 
-.hero-wrapper{
+.about-wrapper{
     position: relative;
     display: flex;
     text-align: center;
    
 }
 
-.hero-image{
+.about-image{
     min-width: 780px;
     min-height: 100%;
-    background-image:url(../../img/desktop/main-photo-1440-1x.png) ;
-    background-size: cover;
+    background-size : cover;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     right: -1%;
- @include mintablet {
+    background-image:url(../../images/about/desktop/about-hero-main-1x.png) ;
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image:url(../../images/about/desktop/about-hero-main-2x.png);
+    
+ 
+}
+@include mintablet {
     display: none;
  }
 }
 
-.header-title{
+.about-title{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -91,7 +63,7 @@
     z-index: 1;
 }
 
-.hero__header {
+.about__header {
     font-family: "GFS Neohellenic";
     font-style: normal;
     font-weight: 400;
@@ -110,7 +82,7 @@
 }    
 }
 
-.hero-text{
+.about-text{
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
@@ -124,7 +96,7 @@ z-index: 1;
 }
 }
 
-.hero-second-header{
+.about-second-header{
 font-family: 'GFS Neohellenic';
 font-style: normal;
 font-weight: 400;

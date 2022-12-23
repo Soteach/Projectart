@@ -39,48 +39,37 @@ justify-content: center;
 }
 
 .dishes{
-    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    background-image:url(../../images/background/white-concrete-bg-desktop-2x.png);
     background-repeat: no-repeat;
     background-size: cover;
-
-
+    
     @include minimize {
         background-image:
-        url(../../img/desktop/white-concrete-bg.jpg);
+        url(../../images/background/white-concrete-bg-mobile-1x.png);
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: url(../../img/desktop/white-concrete-bg.jpg);
+        background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
     }
 }
 
 @include mobile {
     background-image:
-    url(../../img/desktop/white-concrete-bg.jpg);
+    url(../../images/background/white-concrete-bg-mobile-1x.png);
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
-}
-}
-
-    @include tablet {
-    background-image:
-    url(../../img/desktop/white-concrete-bg.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
 }
 }
 
 @include desktop {
     background-image:
-    url(../../img/desktop/white-concrete-bg.jpg);
+    url(../../images/background/white-concrete-bg-desktop-1x.png);
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+    background-image:url(../../images/background/white-concrete-bg-desktop-2x.png);
     }
 }
 }
