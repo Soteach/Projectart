@@ -1,325 +1,296 @@
-button{
-    width: 200px;
-    height: 54px;
-    background-color: $yellow-color;
-    cursor: pointer;
+button {
+  width: 200px;
+  height: 54px;
+  background-color: $yellow-color;
+  cursor: pointer;
 }
 
 .header-button {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px 32px;
-background-color: transparent;
-gap: 10px;
-min-width: 200px;
-height: 54px;
-left: 1100px;
-top: 12px;
-border: 1px solid $blue-color;
-border-radius: 16px;
-color: $blue-color;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: transparent;
+  gap: 10px;
+  min-width: 200px;
+  height: 54px;
+  left: 1100px;
+  top: 12px;
+  border: 1px solid $blue-color;
+  border-radius: 16px;
+  color: $blue-color;
 
-@media screen and (max-width:740px) {
-        margin-left: auto;
-        
-    }
-
-&:hover,
-    &:focus {
-        color: $gold-color;
-        border-color: $gold-color;
-
-    }
-
-&:active{
-    background-color:$gold-color ;
-    color:$main-color;
-}
-}
-
-
-.menu-open-button{
-    display: block;
+  @media screen and (max-width: 740px) {
     margin-left: auto;
-    border: none;
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-        @media screen and (min-width:768px) {
-        display: none;
-    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $gold-color;
+    border-color: $gold-color;
+  }
+
+  &:active {
+    background-color: $gold-color;
+    color: $main-color;
+  }
 }
 
-.menu-close-btn{
-    width: 60px;
-    height: 60px;
-    color:$dark-blue-color ;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color:transparent;
-    border: none;
-    padding: 10px 15px;
+.menu-open-button {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
+.menu-close-btn {
+  width: 60px;
+  height: 60px;
+  color: $dark-blue-color;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
 }
 
 .modal-close-button {
-    width: 60px;
-    height: 60px;
-    color:$gold-color;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color:transparent;
-    border: none;
+  width: 60px;
+  height: 60px;
+  color: $gold-color;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .hero__button {
-border: none;
-height: 54px;
-width: 200px;
-left: 20px;
-top: 20px;
-border-radius: 16px;
-padding: 16px 32px 16px 32px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-color: $main-color;
-margin-bottom: 24px;
-z-index: 1;
-    &:hover,
-    &:focus {
-        color: $yellow-color;
-        border: 3px solid $yellow-color ;
-        background-color: transparent;
-    }
+  border: none;
+  height: 54px;
+  min-width: 200px;
+  left: 20px;
+  top: 20px;
+  border-radius: 16px;
+  padding: 16px 32px 16px 32px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-color;
+  margin-bottom: 24px;
+  z-index: 1;
+  &:hover,
+  &:focus {
+    color: $yellow-color;
+    border: 3px solid $yellow-color;
+    background-color: transparent;
+  }
 
-&:active{
+  &:active {
     background-color: $gold-color;
-    color:$main-color;
-}
-@media screen and(max-width: 767px){
-   width: 342px;
-   margin-left: auto;
-   margin-right: auto;
-    }
-}
-
-
-.story-button{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px 32px;
-background-color: transparent;
-gap: 10px;
-width: 200px;
-height: 54px;
-left: 1107px;
-top: 1355px;
-border: 1px solid $main-color;
-border-radius: 16px;
-color: $main-color;
-margin-bottom: 24px;
-&__container{
-    justify-content: space-between;
-    }
-
-&:hover,
-    &:focus {
-        color: $gold-color;
-        border-color: $gold-color;
-
-    }
-
-&:active{
-    background-color:$gold-color ;
-    color:$main-color;
-    }
-
-@media screen and(max-width: 767px){
+    color: $main-color;
+  }
+  @media screen and(max-width: 767px) {
     width: 342px;
-margin-left: auto;
-margin-right: auto;
-    }
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.gallery-button{
-    display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px 32px;
-background-color: transparent;
-gap: 10px;
-width: 200px;
-height: 54px;
-left: 1107px;
-top: 1355px;
-border: 1px solid $main-color;
-border-radius: 16px;
-color: $main-color;
-margin-bottom: 24px;
-&:active{
-    background-color:$gold-color ;
-    color:$main-color;
-    border-color:$gold-color;
-    }
+.story-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: transparent;
+  gap: 10px;
+  width: 200px;
+  height: 54px;
+  left: 1107px;
+  top: 1355px;
+  border: 1px solid $main-color;
+  border-radius: 16px;
+  color: $main-color;
+  margin-bottom: 24px;
+  &__container {
+    justify-content: space-between;
+  }
 
-@media screen and (max-width:767px) {
+  &:hover,
+  &:focus {
+    color: $gold-color;
+    border-color: $gold-color;
+  }
+
+  &:active {
+    background-color: $gold-color;
+    color: $main-color;
+  }
+
+  @media screen and(max-width: 767px) {
+    width: 342px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.gallery-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: transparent;
+  gap: 10px;
+  width: 200px;
+  height: 54px;
+  left: 1107px;
+  top: 1355px;
+  border: 1px solid $main-color;
+  border-radius: 16px;
+  color: $main-color;
+  margin-bottom: 24px;
+  &:active {
+    background-color: $gold-color;
+    color: $main-color;
+    border-color: $gold-color;
+  }
+
+  @media screen and (max-width: 767px) {
     max-width: 168px;
-}
-    
-}
-
-.dish__button{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px 32px;
-gap: 10px;
-width: 310px;
-height: 54px;
-background: #E9AF3F;
-border-radius: 16px;
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-border: none;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-color: $main-color;
-margin-left: auto;
-margin-right: auto;
-
- &:hover,
-    &:focus {
-        color: $yellow-color;
-        border: 3px solid $yellow-color ;
-        background-color: transparent;
-    }
-
-    &:active{
-     background-color: $gold-color;
-     color:$main-color;
+  }
 }
 
-@media screen and (max-width:767px) {
-width: 343px;
+.dish__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 310px;
+  height: 54px;
+  background: #e9af3f;
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  border: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-color;
+  margin-left: auto;
+  margin-right: auto;
 
-margin-bottom: 16px;
-}
-}
+  &:hover,
+  &:focus {
+    color: $yellow-color;
+    border: 3px solid $yellow-color;
+    background-color: transparent;
+  }
 
+  &:active {
+    background-color: $gold-color;
+    color: $main-color;
+  }
 
-.portfolio-list {
-    & button{
-        padding: 8px 22px;
-        border:none;
-    }
+  @media screen and (max-width: 767px) {
+    width: 343px;
 
-    
-.portfolio__item:not(:last-child){
-
-    @include mindesktop {
-        margin-right: 8px;
-        margin-bottom: 15px;
-    }
-
-    @include desktop {
-        margin-right: 8px;
-    }
-
-        
-    }
-    
-.portfolio__item{
-    @include mintablet {
-        margin-bottom: 40px;
-    }
-
-    @include tablet {
-        margin-bottom: 30px;
-    }
-
-    @include desktop {
-        margin-bottom: 50px;
-    }
-
-}
-
-    @include tablet {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        &.btn__item {
-            display:inline-block;
-        }
-    }
-
-    @include mintablet {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        & .btn__item {
-        display:inline-block;
-        }
-
-}
+    margin-bottom: 16px;
+  }
 }
 
 .modal-button {
-    border: none;
-height: 54px;
-width: 200px;
-left: 20px;
-top: 20px;
-border-radius: 16px;
-padding: 16px 32px 16px 32px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-background-color: $yellow-color;
-color: $main-color;
-    &:hover,
-    &:focus {
-        color: $main-color;
-        border: 3px solid $yellow-color ;
-        background-color: transparent;
-        box-shadow: none;
-    }
-
-&:active{
-     background-color: $gold-color;
-     color:$main-color;
-     box-shadow: none;
-}
-
-}
-
-.modal-close-btn{
-    height: 41px;
-    width: 41px;
+  border: none;
+  height: 54px;
+  width: 200px;
+  left: 20px;
+  top: 20px;
+  border-radius: 16px;
+  padding: 16px 32px 16px 32px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: $yellow-color;
+  color: $main-color;
+  &:hover,
+  &:focus {
+    color: $main-color;
+    border: 3px solid $yellow-color;
     background-color: transparent;
-    border: none;
-    color:$yellow-color ;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    box-shadow: none;
+  }
+
+  &:active {
+    background-color: $gold-color;
+    color: $main-color;
+    box-shadow: none;
+  }
+}
+
+.modal-close-btn {
+  height: 41px;
+  width: 41px;
+  background-color: transparent;
+  border: none;
+  color: $yellow-color;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.about-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: transparent;
+  gap: 10px;
+  width: 200px;
+  height: 54px;
+  left: 1107px;
+  top: 1355px;
+  border: 1px solid $blue-color;
+  border-radius: 16px;
+  color: $blue-color;
+  margin-bottom: 24px;
+  &__container {
+    justify-content: space-between;
+  }
+
+  &:hover,
+  &:focus {
+    color: $gold-color;
+    border-color: $gold-color;
+  }
+
+  &:active {
+    background-color: $gold-color;
+    color: $main-color;
+  }
+
+  @media screen and(max-width: 767px) {
+    width: 342px;
+  }
 }

@@ -1,135 +1,130 @@
 .backdrop {
-    width: 100vw;
-    height: 100vh;
-    background-color:rgba(17, 70, 122, 0.7);
-    position: fixed;
-    border: solid 1px $blue-color;
-    top:0;
-    z-index: 3;
-    @include tranSition ();
-    transition-delay: 50ms;
-    
-    &.is-hidden .modal {
-        transform:translate(0) scale(0.1); 
-        transform: rotate(180deg);
-    }
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(17, 70, 122, 0.7);
+  position: fixed;
+  border: solid 1px $blue-color;
+  top: 0;
+  z-index: 3;
+  @include tranSition();
+  transition-delay: 50ms;
 
+  &.is-hidden .modal {
+    transform: translate(0) scale(0.1);
+    transform: rotate(180deg);
+  }
 }
 
 .modal {
-    width: 593px;
-    min-height: 496px;
-    color:#F8F8F8;
-    background-color: #11467A;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
-    transition: transform 300ms;
-    padding:32px;
-    width: auto;
-    
+  width: 593px;
+  min-height: 496px;
+  color: #f8f8f8;
+  background-color: #11467a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 300ms;
+  padding: 32px;
+  width: auto;
 }
 
-.modal-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.modal-title{
-color:$main-color;
-    text-transform: uppercase;
-    font-family: 'GFS Neohellenic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
+.modal-title {
+  color: $main-color;
+  text-transform: uppercase;
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
-.modal-text{
-color:$main-color;
-    margin-bottom: 32px;
-    font-family: 'GFS Neohellenic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    
-    @media screen and (max-width:767px) {
-    
+.modal-text {
+  color: $main-color;
+  margin-bottom: 32px;
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 }
 
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-field {
-    position: relative;
-    
+  position: relative;
 }
 
-.modal__form{
-    background-color:$blue-color;
-    padding: 64px 20px;
-    max-width: 594px;
-    max-height: 496px;
-    @media screen and (max-width:767px)  {
-padding: 40px 16px;
-max-height: 100%;
-}
+.modal__form {
+  background-color: $blue-color;
+  padding: 64px 20px;
+  max-width: 594px;
+  max-height: 496px;
+  @media screen and (max-width: 767px) {
+    padding: 40px 16px;
+    max-height: 100%;
+  }
 }
 
 .modal-input {
-    width: 240px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid $main-color;
-    padding: 10px;
-    padding-left: 30px;
-    color:rgba(248, 248, 248, 0.6);
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    @media screen and (max-width:767px) {
-width: 100%;}
-
-
+  width: 240px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $main-color;
+  padding: 10px;
+  padding-left: 30px;
+  color: rgba(248, 248, 248, 0.6);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
-.reserve-input::placeholder{
-    color:rgba(248, 248, 248, 0.6);
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+.reserve-input::placeholder {
+  color: rgba(248, 248, 248, 0.6);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 
-    @media screen and (max-width:767px) {
-width: 100%;}
-    }
-
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
 
 .modal-field {
-    border-color:transparent;
-    width: 100%;
-    padding: 0;
+  border-color: transparent;
+  width: 100%;
+  padding: 0;
 }
 
 .modal-field-check {
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding: 0;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
 }

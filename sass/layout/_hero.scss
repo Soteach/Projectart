@@ -1,145 +1,136 @@
-.wrapper{
-    background-image:url(../../images/background/white-concrete-bg-desktop-2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    @include minimize {
-        background-image:
-        url(../../images/background/white-concrete-bg-mobile-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-    }
-}
+.wrapper {
+  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-@include mobile {
-    background-image:
-    url(../../images/background/white-concrete-bg-mobile-1x.png);
+  @include minimize {
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-}
-}
-
-@include desktop {
-    background-image:
-    url(../../images/background/white-concrete-bg-desktop-2x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image:url(../../img/desktop/white-concrete-bg.jpg);
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
     }
-}
+  }
+
+  @include mobile {
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../../images/background/white-concrete-bg-desktop-1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+    }
+  }
 }
 
 .hero {
-    background-repeat: no-repeat;
-    background-size: inherit;
-    background-position: right;
-    
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: right;
 }
 
-
-.mobile-background{
-    display: block;
-    height: 100%;
-
+.mobile-background {
+  display: block;
+  height: 100%;
 }
 
-.hero-wrapper{
-    position: relative;
-    display: flex;
-    text-align: center;
-   
+.hero-wrapper {
+  position: relative;
+  display: flex;
+  text-align: center;
 }
 
-.hero-image{
-    min-width: 780px;
-    min-height: 100%;
-    background-image:url(../../img/desktop/main-photo-1440-1x.png) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: -1%;
- @include mintablet {
+.hero-image {
+  min-width: 780px;
+  min-height: 100%;
+  background-image: url(../../img/desktop/main-photo-1440-1x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: -2%;
+  @include mintablet {
     display: none;
- }
+  }
 }
 
-.header-title{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
-    z-index: 1;
-    
+.header-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  z-index: 1;
 
-
-    @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 183px;
     padding-bottom: 223px;
-}
+  }
 }
 
-.hero-logo{
-    width: 120px;
-    height: 100px;
-    z-index: 1;
+.hero-logo {
+  width: 120px;
+  height: 100px;
+  z-index: 1;
 }
 
 .hero__header {
-    font-family: "GFS Neohellenic";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 74px;
-    text-transform: uppercase;
-    color: $dark-blue-color;
-    margin-bottom: 4px;
-    z-index: 1;
-    @media screen and (min-width: 767px) and (max-width: 1200px) {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: uppercase;
+  color: $dark-blue-color;
+  margin-bottom: 4px;
+  z-index: 1;
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
     color: $gold-color;
-}
-    @media screen and (max-width:768px) {
+  }
+  @media screen and (max-width: 768px) {
     font-size: 48px;
     line-height: 56px;
-}    
+  }
 }
 
-.hero-text{
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-color: $dark-blue-color;
-margin-bottom: 24px;
-z-index: 1;
-@media screen and (min-width: 767px) and (max-width: 1200px) {
-  color: $gold-color;
-}
-}
-
-.hero-second-header{
-font-family: 'GFS Neohellenic';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 37px;
-text-transform: uppercase;
-color: $dark-blue-color;
-margin-bottom: 32px;
-z-index: 1;
-@media screen and (min-width: 767px) and (max-width: 1200px) {
-  color: $gold-color;
+.hero-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-blue-color;
+  margin-bottom: 24px;
+  z-index: 1;
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    color: $gold-color;
+  }
 }
 
-@media screen and(max-width: 767px){
+.hero-second-header {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $dark-blue-color;
+  margin-bottom: 32px;
+  z-index: 1;
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    color: $gold-color;
+  }
+
+  @media screen and(max-width: 767px) {
     font-size: 20px;
     line-height: 23px;
-}
+  }
 }

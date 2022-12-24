@@ -1,125 +1,120 @@
-.dish__header{
-    margin-bottom: 40px;
-    text-align: center;
-    @media screen and (max-width:767px) {
+.dishes {
+  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include minimize {
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
+    }
+  }
+
+  @include mobile {
+    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../../images/background/white-concrete-bg-desktop-1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+    }
+  }
+}
+
+.dish__header {
+  margin-bottom: 40px;
+  text-align: center;
+  @media screen and (max-width: 767px) {
     margin-bottom: 24px;
-}
-}
-
-.dish__image{
-    max-width: 343px;
+  }
 }
 
-.dish-wrapper{
-padding: 100px 235px;
-@media screen and (max-width:1470px) {
-padding: 60px 16px;
-}
+.dish__image {
+  max-width: 343px;
 }
 
-.dish__list{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
+.dish-wrapper {
+  padding: 100px 235px;
+  @media screen and (max-width: 1470px) {
+    padding: 60px 16px;
+  }
 }
 
-
-
-.dish__header{
-font-family: 'GFS Neohellenic';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 56px;
-text-transform: uppercase;
-color: $dark-blue-color;
-display: flex;
-justify-content: center;
+.dish__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-.dishes{
-    background-image:url(../../images/background/white-concrete-bg-desktop-2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    @include minimize {
-        background-image:
-        url(../../images/background/white-concrete-bg-mobile-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-    }
+.dish__header {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $dark-blue-color;
+  display: flex;
+  justify-content: center;
 }
 
-@include mobile {
-    background-image:
-    url(../../images/background/white-concrete-bg-mobile-1x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-}
-}
-
-@include desktop {
-    background-image:
-    url(../../images/background/white-concrete-bg-desktop-1x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image:url(../../images/background/white-concrete-bg-desktop-2x.png);
-    }
-}
+.dish__card-header {
+  width: 301px;
+  height: 38px;
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: $blue-color;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 6px;
 }
 
-.dish__card-header{
-width: 301px;
-height: 38px;
-font-family: 'GFS Neohellenic';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 38px;
-display: flex;
-align-items: center;
-color: $blue-color;
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-margin-bottom: 6px;
+.dish__price {
+  width: 301px;
+  height: 28px;
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: $blue-color;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 6px;
 }
 
-.dish__price{
-    width: 301px;
-height: 28px;
-font-family: 'GFS Neohellenic';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-color:$blue-color;
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-margin-bottom: 6px;
-}
-
-.dish__text{
-    width: 301px;
-height: 66px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-color:$dark-blue-color;
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
-margin-bottom: 24px;
+.dish__text {
+  width: 301px;
+  height: 66px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-blue-color;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 24px;
 }
