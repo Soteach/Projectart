@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 <link
-      rel="icon"
-      type="image/png"
-      width="64" height="64"
-      href="./img/logo.png"
+        rel="icon"
+        type="image/png"
+        width="64" height="64"
+        href="./img/logo.png"
     />
 </head>
 <body>
@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container">
         <div class="header-container">
-<a  href="index.html">
+<a  href="about.html">
     <img class="header-logo" src="./img/desktop/logo desktop.svg" alt="logo">
 </a>
 <div class="nav-wrapper">
@@ -34,7 +34,7 @@
             <a class="nav__link link" href="about.html">About us</a>
         </li>
         <li class="list nav__item">
-            <a class="nav__link link" href="">Menu</a>
+            <a class="nav__link link" href="menu.html">Menu</a>
         </li>
         <li class="list nav__item">
             <a class="nav__link link" href="">Catering</a>
@@ -42,7 +42,6 @@
         <li class="list nav__item">
             <a class="nav__link link" href="">Contacts</a>
         </li>
-        
     </ul>
 </nav>
 <button type="button" class="header-button">view the menu</button>
@@ -50,7 +49,6 @@
 <button type="button" class="menu-open-button"> <img src="./svg/menu-button.svg" alt=""></button>
 </div>
 </div>
-
 <div class="mob-menu is-hidden">
     <div class="mob-container">
     <button class="menu-close-btn" type="button">
@@ -75,11 +73,9 @@
             </li>
         </ul>
     </nav>
-    
 </div>
 </div>
     </header>
-    
     <main>
         <section class="about">
             <div class="container">
@@ -105,8 +101,8 @@
             <div class="specialties-container">
             <h2 class="specialties-title">Our Specialties</h2>
             <h3 class="specialties-text">We know how to make the best Greek tarts in town</h3>
-             <ul class="specialties__list" >
-            <li class="list work__item">
+            <ul class="specialties__list" >
+            <li class="list specialties__item">
                 <a href="">
                     <div class="specialties-card">
 <picture>
@@ -116,28 +112,24 @@
                         ./images/specialties/desktop/spec-desktop-1-2x.png 2x"
                         media="(min-width: 1440px)"
                         />
-    
                         <source srcset="
                         ./images/specialties/mobile/spec-mobile-1-1x.png 1x, 
                         ./images/specialties/mobile/spec-mobile-1-2x.png 2x"
                         media="(min-width: 378px)"
                         />
-    
                         <img 
-                        class="dish__image" 
+                        class="specialties__image" 
                         src="./images/specialties/mobile/spec-mobile-1-2x.png" 
                         alt="tomatoes" 
-                       
-                       />
+                        />
                     </picture>
                     <div class="specialties-header">
-                        <h3 class="specialties__card-header">Assorted meze</h3>
+                        <h3 class="specialties__card-header">Only fresh ingredients</h3>
                 </div>    
                 </div>
                 </a>
             </li>
-
-             <li class="list work__item">
+                <li class="list specialties__item">
                 <a href="">
                     <div class="specialties-card">
 <picture>
@@ -147,27 +139,24 @@
                         ./images/specialties/desktop/spec-desktop-2-2x.png 2x"
                         media="(min-width: 1440px)"
                         />
-    
                         <source srcset="
                         ./images/specialties/mobile/spec-mobile-2-1x.png 1x, 
                         ./images/specialties/mobile/spec-mobile-2-2x.png 2x"
                         media="(min-width: 378px)"
                         />
-    
                         <img 
-                        class="dish__image" 
+                        class="specialties__image" 
                         src="./images/specialties/mobile/spec-mobile-2-2x.png" 
                         alt="tomatoes" 
-                       
-                       />
+                        />
                     </picture>
                     <div class="specialties-header">
-                        <h3 class="specialties__card-header">Assorted meze</h3>
+                        <h3 class="specialties__card-header">40 years of experience</h3>
                 </div>    
                 </div>
                 </a>
             </li>
-             <li class="list work__item">
+             <li class="list specialties__item">
                 <a href="">
                     <div class="specialties-card">
 <picture>
@@ -177,22 +166,20 @@
                         ./images/specialties/desktop/spec-desktop-3-2x.png 2x"
                         media="(min-width: 1440px)"
                         />
-    
                         <source srcset="
                         ./images/specialties/mobile/spec-mobile-3-1x.png 1x, 
                         ./images/specialties/mobile/spec-mobile-3-2x.png 2x"
                         media="(min-width: 378px)"
                         />
-    
                         <img 
-                        class="dish__image" 
+                        class="specialties__image" 
                         src="./images/specialties/mobile/spec-mobile-3-2x.png" 
                         alt="tomatoes" 
-                       
+                        width="420px" height="320px"
                        />
                     </picture>
                     <div class="specialties-header">
-                        <h3 class="specialties__card-header">Assorted meze</h3>
+                        <h3 class="specialties__card-header">Traditional recipes</h3>
                 </div>    
                 </div>
                 </a>
@@ -203,353 +190,29 @@
     </div>
     </div>
     </section>
-    <section class="dishes">
-        <div class="container">
-            <div class="dish-wrapper">
-        <h2 class="dish__header">Specialty dishes</h2>
-            <ul class="dish__list" >
-            <li class="list work__item">
-                <a href="">
-                    <div class="dish-card">
-<picture>
-                        <source 
-                        srcset="
-                        ./images/dishes/assortie-desktop-1x.png 1x,
-                        ./images/dishes/assortie-desktop-2x.png 2x"
-                        media="(min-width: 1440px)"
-                        />
-    
-                        <source srcset="
-                        ./images/dishes/assortie-mobile-1x.png 1x, 
-                        ./images/dishes/assortie-mobile-2x.png 2x"
-                        media="(min-width: 378px)"
-                        />
-    
-                        <img 
-                        class="dish__image" 
-                        src="./images/dishes/assortie-mobile-2x.png" 
-                        alt="Dish" 
-                       
-                       />
-                    </picture>
-                    <div class="dish-header">
-                        <h3 class="dish__card-header">Assorted meze</h3>
-                        <h4 class="dish__price">$ 18.00</h4>
-                        <p class="dish__text">Meze is a large set of snacks that allows you to get to know the flavors of Greek cuisine better</p>
-                    <button type="button" class="dish__button">More details</button>
-                </div>    
-                </div>
-                </a>
-            </li>
-            <li class="list work__item">
-                <a href="">
-<picture>
-                            <source 
-                        srcset="
-                        ./images/dishes/porcupines-desktop-1x.png 1x,
-                        ./images/dishes/porcupines-desktop-2x.png 2x"
-                        media="(min-width: 1440px)"
-                        />
-    
-                        <source srcset="
-                        ./images/dishes/porcupines-mobile-1x.png 1x, 
-                        ./images/dishes/porcupines-mobile-2x.png 2x"
-                        media="(min-width: 378px)"
-                        />
-    
-                        <img 
-                        class="dish__image" 
-                        src="./images/dishes/porcupines-mobile-2x.png" 
-                        alt="Dish" 
-                        
-                        />
-                    </picture>
-                    <div class="dish-header">
-                        <h3 class="dish__card-header">Porcupines</h3>
-                        <h4 class="dish__price">$ 20.00</h4>
-                        <p class="dish__text">We serve it, as in Greece. A whole pallet of feta cheese, only kalamata olives and real Greek olive oil</p>
-                    <button type="button" class="dish__button">More details</button>
-                    </div>
-            </a>
-            </li>
-            <li class="list work__item">
-                <a href="">
-<picture>
-                            <source 
-                        srcset="
-                        ./images/dishes/mousaka-desktop-1x.png 1x,
-                        ./images/dishes/mousaka-desktop-2x.png 2x"
-                        media="(min-width: 1440px)"
-                        />
-    
-                        <source srcset="
-                        ./images/dishes/mousaka-mobile-1x.png 1x, 
-                        ./images/dishes/mousaka-mobile-2x.png 2x"
-                        media="(min-width: 378px)"
-                        />
-    
-                        <img 
-                        class="dish__image" 
-                        src="./images/dishes/mousaka-mobile-2x.png" 
-                        alt="Dish" 
-                        
-                        />
-                    </picture>
-                    <div class="dish-header">
-                        <h3 class="dish__card-header">Moussaka</h3>
-                        <h4 class="dish__price">$ 11.00</h4>
-                        <p class="dish__text">Baked dish of fresh eggplant, potatoes, seasoned ground beef and creamy bechamel sauce</p>
-                    <button type="button" class="dish__button">More details</button>
-                    </div>
-            </a>
-            </li>
-        </ul>
-    </div>
-    </div>
-    </section>
-    
-    <section class="gallery">
-            <div class="gallery-container">
-                <h2 class="gallery__header">Gallery</h2>
-            <ul class="gallery-list">
-                <li class="gallery__item"><button type="button" class="gallery-button">General info</button></li>
-                <li class="gallery__item"><button type="button" class="gallery-button">Interior</button></li>
-                <li class="gallery__item"><button type="button" class="gallery-button">Dishes</button></li>
-                <li class="gallery__item"><button type="button" class="gallery-button">Catering</button></li>
-            </ul>        
-            <ul class="grid">
-                <li class="list grid__item">
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item1-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item1-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item1-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item1-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item1-2x.png" 
-                            alt="bar" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-
-                <li class="list grid__item">
-                    <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item2-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item2-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item2-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item2-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item2-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-
-                <li class="list grid__item">
-                                        
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item3-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item3-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item3-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item3-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item3-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-                
-                <li class="list grid__item">
-                        
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item4-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item4-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item4-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item4-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item4-2x.png" 
-                            alt="man and burger" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-                <li class="grid__item">
-                        
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item5-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item5-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item5-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item5-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item5-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-                <li class="list grid__item">
-                        
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item6-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item6-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source 
-                            srcset="
-                            ./images/gallery/mobile/mobile-item6-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item6-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item6-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-            </ul>
-            <ul class="mark-list">
-                <li class="mark-item"> <img src="./images/gallery/mobile/arrow-back.png" alt="arrow-back"> </li>
-                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 1.png" alt="elipse"></li>
-                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
-                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
-                <li class="mark-item"><img src="./images/gallery/mobile/arrow-forward.png" alt="arrow-fwd"></li>
-            </ul>
-        </div>
-        </section>
-        
-    <section class="reserve">
-            <div class="reserve-container">
-            <div class="reserve-wrapper">
-              
-            <div class="reserve-image">
-            </div>
-<div class="reserve__form">
-    <h2 class="reserve-title">Reserve table in restaurant</h2>
-    <p class="reserve-text">Book a table for an unforgettable evening</p>
-    <form class="input-form" action="">
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-phone" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="tel" 
-        placeholder="Telephone number" 
-        >
-    </div>
-
-        <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-pupil" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="number" 
-        placeholder="Number of guests" 
-        >
-    </div>
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-date" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="text" 
-        placeholder="Date" 
-       >
-    </div>
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-time" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="text" 
-        placeholder="Time" 
-        >
-    </div>
-        <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
-
-    </form>
-</div>
-</div>
-</div>
-</section>
-   <section class="contacts">
-    <div class="contacts-container">
-        <h2 class="contacts-header">Contacts</h2>
-        <div class="contact-wrapper">
+    <section class="about-contacts">
+    <div class="about-contacts-container">
+        <h2 class="about-contacts-header">Contacts</h2>
+        <div class="about-contact-wrapper">
             <div class="adress">
-                <p class="contacts-text">How To Reach Us</p>
+                <p class="about-contacts-text">How To Reach Us</p>
                 <a href="tel:+38 (096) 330-05-33" class="phone">+38 (096) 330-05-33</a>
                 <a href="artemis.restaurant@mail.com" class="mail">artemis.restaurant@mail.com</a>
             </div>
             <div class="adress">
-                <p class="contacts-text">Where To Find Us</p>
+                <p class="about-contacts-text">Where To Find Us</p>
                 <adress>Kyiv, st. Ivan Franko, 435</adress>
             </div>
-            <div class="open-hours">
-            <p class="contacts-text">Open Hours</p>
-            <div class="work-hours">
-            <ul class="days-list">
+            <div class="about-open-hours">
+            <p class="about-contacts-text">Open Hours</p>
+            <div class="about-work-hours">
+            <ul class="about-days-list">
                 <li class="hours-item">Monday - Thursday</li>
                 <li class="hours-item">Friday</li>
                 <li class="hours-item">Saturday</li>
                 <li class="hours-item">Sunday</li>
             </ul>
-            <ul class="hours-list">
+            <ul class="about-hours-list">
                 <li class="hours-item">11:00am - 09:00pm</li>
                 <li class="hours-item">11:00am - 10:00pm</li>
                 <li class="hours-item">03:00pm - 10:00pm</li>
@@ -560,18 +223,18 @@
             <div class="soc-networks">
                 <p class="contacts-text">Read Us</p>
                 
-                <ul class="soc-list">
+                <ul class="about-soc-list">
                     <li class="soc-items">
                         <a href="soc-links">
-                        <svg class="instagram-icon" width="46" height="46">
-                            <use href="./images/icons/icons.svg#icon-instagram"></use>
+                        <svg class="instagram-icon" width="22" height="22">
+                            <use href="./images/icons/icons.svg#icon-instagram-dark"></use>
                         </svg>
                     </a>
                     </li>
                     <li class="soc-items"> 
                         <a href="soc-links">
-                        <svg class="instagram-icon" width="46" height="46">
-                            <use href="./images/icons/icons.svg#icon-facebook"></use>
+                        <svg class="instagram-icon" width="22" height="22">
+                            <use href="./images/icons/icons.svg#icon-facebook-dark"></use>
                         </svg>
                     </a>
                 </li>
@@ -580,25 +243,21 @@
             </div>
         </div>
     </div>
-   </section>
-
-   </section>
-    
+    </section>
+    </section>
     </main>
-     
     <footer class="footer">
             <div class="footer-block">
         <a  href="index.html">
     <img class="footer-logo" src="./img/desktop/logo desktop.svg" alt="logo">
 </a>
 <div class="footer-lp">
-    <p class="footer-text">© 2022 Artemis. Made with ♥</p>
+    <p class="footer-text">© 2022 Artemis. Made with <span class="heart">&#10084;</span></p>
     <p class="footer-text">Terms and conditions</p>
     <p class="footer-text">Privacy statement</p>
 </div>
 </div>
 </footer>
-
 <!-- "backdrop is-hidden" -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -622,7 +281,6 @@
         placeholder="Telephone number" 
         >
     </div>
-
         <div class="input-wrap">
         <svg class="form-icon" width="24" height="24">
         <use href="./images/icons/icons.svg#icon-pupil" ></use>
@@ -641,7 +299,7 @@
         class="reserve-input" 
         type="text" 
         placeholder="Date" 
-       >
+        >
     </div>
     <div class="input-wrap">
         <svg class="form-icon" width="24" height="24">
@@ -654,13 +312,10 @@
         >
     </div>
         <button  class="hero__button pointer" type="button">Book a table</button>
-
     </form>
 </div>
 </div>
 </div>
-
-
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script> 
 </body>
