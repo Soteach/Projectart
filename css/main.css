@@ -239,24 +239,19 @@ summary {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
-  outline: solid 2px red;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .container {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
+    max-width: 730px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    width: 100%;
   }
 }
 
@@ -569,7 +564,7 @@ img {
 }
 
 .wrapper {
-  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+  background-image: url(../../images/background/hero-bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1644,15 +1639,6 @@ button {
   }
 }
 
-.gallery-container {
-  padding: 100px 70px;
-}
-@media screen and (max-width: 767px) {
-  .gallery-container {
-    padding: 60px 16px;
-  }
-}
-
 .gallery__header {
   width: 183px;
   height: 56px;
@@ -1778,7 +1764,7 @@ button {
 }
 
 .gallery {
-  background-color: #11467A;
+  background-color: #11467a;
 }
 
 .contacts {
@@ -2508,6 +2494,10 @@ button {
   }
 }
 
+.menu-grid {
+  display: inline-flex;
+}
+
 .menu-gallery__header {
   width: 183px;
   height: 56px;
@@ -2534,4 +2524,10 @@ button {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+}
+
+.item-1 {
+  display: inline-flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */

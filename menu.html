@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container">
         <div class="header-container">
-<a  href="menu.html">
+<a  href="index.html">
     <img class="header-logo" src="./img/desktop/logo desktop.svg" alt="logo">
 </a>
 <div class="nav-wrapper">
@@ -57,13 +57,13 @@
     <nav class="mob-nav" >
         <ul class="mob-menu-list">
             <li class="list mob__item ">
-                <a class="mob__link link" href="index.html">Home</a>
-            </li>
-            <li class="list mob__item-current mob__item">
-                <a class="mob__link link" href="about.html">About us</a>
+                <a class="mob__link link" href="./index.html">Home</a>
             </li>
             <li class="list mob__item">
-                <a class="mob__link link" href="menu.html">Menu</a>
+                <a class="mob__link link" href="./about.html">About us</a>
+            </li>
+            <li class="list mob__item-current mob__item">
+                <a class="mob__link link" href="./menu.html">Menu</a>
             </li>
             <li class="list mob__item">
                 <a class="mob__link link" href="">Catering</a>
@@ -142,6 +142,7 @@
         </div>
         </section>
          <section class="gallery">
+            <div class="container">
             <div class="gallery-container">
                 <h2 class="menu-gallery__header">Gallery</h2>
                 <p class="menu-gallery-text">Mouth-watering dishes and how they are created</p>
@@ -152,7 +153,8 @@
   <div class="photo4"></div>
   <div class="photo5"></div>
 </div> -->
-               <ul class="grid">
+               <ul class="menu-grid">
+                <div class="item-1">
                 <li class="list grid__item">
                         <picture>
                             <source 
@@ -193,29 +195,6 @@
         
                             <img 
                             src="./images/menu/menu-gallery/desktop/menu-desk-gal-2-2x.png" 
-                            alt="bar" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-
-                <li class="list grid__item">
-                       <picture>
-                            <source 
-                            srcset="
-                            ./images/menu/menu-gallery/desktop/menu-desk-gal-3-1x.png 1x,
-                            ./images/menu/menu-gallery/desktop/menu-desk-gal-3-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/menu/menu-gallery/mobile/menu-mob-gal-3-1x.png 1x,
-                            ./images/menu/menu-gallery/mobile/menu-mob-gal-3-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/menu/menu-gallery/desktop/menu-desk-gal-3-2x.png" 
                             alt="bar" 
                             width="450"
                             height="294"/>
@@ -268,7 +247,29 @@
                             height="294"/>
                         </picture>
                 </li>
-                
+                </div>
+                 <li class="list grid__item">
+                       <picture>
+                            <source 
+                            srcset="
+                            ./images/menu/menu-gallery/desktop/menu-desk-gal-3-1x.png 1x,
+                            ./images/menu/menu-gallery/desktop/menu-desk-gal-3-2x.png 2x"
+                            media="(min-width: 1200px)"
+                            />
+              
+                            <source srcset="
+                            ./images/menu/menu-gallery/mobile/menu-mob-gal-3-1x.png 1x,
+                            ./images/menu/menu-gallery/mobile/menu-mob-gal-3-2x.png 2x"
+                            media="(min-width: 370px)"
+                            />
+        
+                            <img 
+                            src="./images/menu/menu-gallery/desktop/menu-desk-gal-3-2x.png" 
+                            alt="bar" 
+                            width="450"
+                            height="294"/>
+                        </picture>
+                </li>
             </ul> 
             <ul class="mark-list">
                 <li class="mark-item"> <img src="./images/gallery/mobile/arrow-back.png" alt="arrow-back"> </li>
@@ -277,6 +278,7 @@
                 <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
                 <li class="mark-item"><img src="./images/gallery/mobile/arrow-forward.png" alt="arrow-fwd"></li>
             </ul> 
+        </div>
         </div>
         </section>
     <section class="about-contacts">

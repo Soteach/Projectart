@@ -1,128 +1,119 @@
-
-
-.gallery-container{
-    padding: 100px 70px;
-        @media screen and (max-width:767px) {
-    padding: 60px 16px;
+.gallery-container {
+  //     padding: 100px 70px;
+  //         @media screen and (max-width:767px) {
+  //     padding: 60px 16px;
+  // }
 }
 
+.gallery__header {
+  width: 183px;
+  height: 56px;
+  left: 629px;
+  top: 100px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $main-color;
 }
 
-.gallery__header{
-width: 183px;
-height: 56px;
-left: 629px;
-top: 100px;
-margin: 0 auto;
-margin-bottom: 32px;
-font-family: 'GFS Neohellenic';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 56px;
-text-transform: uppercase;
-color: $main-color;
+.gallery-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 12px;
+  flex-wrap: wrap;
 
+  @media screen and (max-width: 767px) {
+    gap: 6px;
+  }
 }
 
-
-
-.gallery-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 10px;
-    gap: 12px;
-    flex-wrap: wrap;
-
-    @media screen and (max-width:767px) {
-    gap:6px;
-}
-
-}
-
-.grid{
-    display: flex;
-    max-width: 1300px;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px;
-    @media screen and (max-width:767px) {
-    gap:6px;
+.grid {
+  display: flex;
+  max-width: 1300px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    gap: 6px;
     margin-bottom: 24px;
-}
-}
-    
-.mark-list{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    gap: 12px;
-    justify-content: center;
+  }
 }
 
+.mark-list {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
 
 .product__title {
-    @include fontStyle (18px, 700, 0.06em, 2);
-    color: var(--header-color);
-    @include tranSition ();
+  @include fontStyle(18px, 700, 0.06em, 2);
+  color: var(--header-color);
+  @include tranSition();
 }
 
 .product__description {
-    @include fontStyle (16px, null, 0.03em, 2);
-    color:var(--main-font-color);
-    }
+  @include fontStyle(16px, null, 0.03em, 2);
+  color: var(--main-font-color);
+}
 
 .portfolio-section {
-    background-color: var(--main-white-color);
-    @include mintablet {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+  background-color: var(--main-white-color);
+  @include mintablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    @include desktop {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .product {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
-.product__thumb{
-    position: relative;
-    overflow: hidden;
+.product__thumb {
+  position: relative;
+  overflow: hidden;
 }
 
-.product-description{
-    position: absolute;
-    @include fontStyle (18px, null, 0.03em, 1.55);
-    top: 0;
-    width: 100%;
-    min-height: 100%;
-    background-color:rgba(33, 150, 243, 0.9);
-    color: var(--main-white-color);
-    padding: 63px 24px;
-    transform:translateY(100%);
-    @include tranSition ();
+.product-description {
+  position: absolute;
+  @include fontStyle(18px, null, 0.03em, 1.55);
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--main-white-color);
+  padding: 63px 24px;
+  transform: translateY(100%);
+  @include tranSition();
 }
 
 .product__link {
-    display: block;
+  display: block;
 }
 
 .cards-footer {
-    padding:20px 24px 20px 24px;
-    border-left:solid 1px #eee;
-    border-right:solid 1px #eee;
+  padding: 20px 24px 20px 24px;
+  border-left: solid 1px #eee;
+  border-right: solid 1px #eee;
 }
 
-.gallery{
-    background-color: #11467A;
+.gallery {
+  background-color: #11467a;
 }
