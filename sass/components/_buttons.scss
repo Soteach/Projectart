@@ -275,6 +275,7 @@ button {
   border-radius: 16px;
   color: $blue-color;
   margin-bottom: 24px;
+  z-index: 1;
   &__container {
     justify-content: space-between;
   }
