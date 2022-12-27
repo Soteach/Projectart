@@ -5,582 +5,572 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artemis</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-<link
-      rel="icon"
-      type="image/png"
-      width="64" height="64"
-      href="./img/logo.png"
-    />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.min.css">
+        <link
+            rel="icon"
+            type="image/png"
+            width="64" height="64"
+            href="./img/logo.png"
+            />
 </head>
-<body>
-    <div class="wrapper">
-    <header class="header">
-        <div class="container">
-        <div class="header-container">
-<a  href="index.html">
-    <img class="header-logo" src="./img/desktop/logo desktop.svg" alt="logo">
-</a>
-<div class="nav-wrapper">
-    <nav class="nav" >
-    <ul class="nav-list">
-        <li class="list nav__item-current">
-            <a class="nav__link link" href="index.html">Home</a>
-        </li>
-        <li class="list nav__item">
-            <a class="nav__link link" href="about.html">About us</a>
-        </li>
-        <li class="list nav__item">
-            <a class="nav__link link" href="menu.html">Menu</a>
-        </li>
-        <li class="list nav__item">
-            <a class="nav__link link" href="catering.html">Catering</a>
-        </li>
-        <li class="list nav__item">
-            <a class="nav__link link" href="">Contacts</a>
-        </li>
-        
-    </ul>
-</nav>
-<button type="button" class="header-button">view the menu</button>
-</div>
-<button type="button" class="menu-open-button"> <img src="./svg/menu-button.svg" alt=""></button>
-</div>
-</div>
-
-<div class="mob-menu is-hidden">
-    <div class="mob-container">
-    <button class="menu-close-btn" type="button">
-        <img src="./svg/modal-close-blue-button.svg" alt="">
-    </button>
-    <nav class="mob-nav" >
-        <ul class="mob-menu-list">
-            <li class="list mob__item-current mob__item">
-                <a class="mob__link link" href="index.html">Home</a>
-            </li>
-            <li class="list mob__item">
-                <a class="mob__link link" href="./about.html">About us</a>
-            </li>
-            <li class="list mob__item">
-                <a class="mob__link link" href="./menu.html">Menu</a>
-            </li>
-            <li class="list mob__item">
-                <a class="mob__link link" href="./catering.html">Catering</a>
-            </li>
-            <li class="list mob__item">
-                <a class="mob__link link" href="">Contacts</a>
-            </li>
-        </ul>
-    </nav>
-    
-</div>
-</div>
-    </header>
-    
-    <main>
-        <section class="hero">
-            
+    <body>
+        <div class="wrapper">
+            <header class="header">
             <div class="container">
-                <div class="hero-wrapper">
-                    <div class="header-title">
-                <img class="hero-logo" src="./img/desktop/logo desktop.svg" alt="logo">
-        <h1 class="hero__header">Artemis</h1>
-        <p class="hero-text">Greek Restaurant</p>
-        <h2 class="hero-second-header">Where flavors meet tradition</h2>
-        <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
-    <img class="mobile-background-picture" src="./images/hero/desktop/hero-1x.png"/>    
-    </div>
-    <div class="hero-image">
-    </div>
-        </div>
-        </div>
-        </div>
-    </section>
-        <section class="story">
-             
-            <div class="story-container">
-            <h2 class="story-title">Short story about us</h2>
-            <div class="story-wrapper">
-            <div class="story-image">
-                <img src="./images/story/story-picture-desktop-1x.png" alt="restaurant room">
-            </div>
-<div class="story__text-block">
-            <p class="story-text">When we chose a place for our restaurant, we really wanted it to be special for you. And we were lucky. We found the perfect place with an incredible terrace.
-            <p class="story-text">When you step in our restaurant, you’ll not only be met with the sights and smells of our traditional recipes, but be greeted as a member of our family.</p>
-            <p class="story-text">Using fresh, locally-sourced produce, seafood, and meat, we’re bringing culture to life in every bite.</p>
-            <p class="story-text-big">We invite you!</p>
-            <div class="story-button__container">
-<button type="button" class="story-button">view the menu</button>
-<button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
-</div> 
-</div>
-</div>
-    </div>
-    </section>
-    
-    <section class="dishes">
-        <div class="container">
-            <div class="dish-wrapper">
-        <h2 class="dish__header">Specialty dishes</h2>
-            <ul class="dish__list" >
-            <li class="list work__item">
-                <a href="">
-                    <div class="dish-card">
-<picture>
-                        <source 
-                        srcset="
-                        ./images/dishes/assortie-desktop-1x.png 1x,
-                        ./images/dishes/assortie-desktop-2x.png 2x"
-                        media="(min-width: 1440px)"
-                        />
-    
-                        <source srcset="
-                        ./images/dishes/assortie-mobile-1x.png 1x, 
-                        ./images/dishes/assortie-mobile-2x.png 2x"
-                        media="(min-width: 378px)"
-                        />
-    
-                        <img 
-                        class="dish__image" 
-                        src="./images/dishes/assortie-mobile-2x.png" 
-                        alt="Dish" 
-                       
-                       />
-                    </picture>
-                    <div class="dish-header">
-                        <h3 class="dish__card-header">Assorted meze</h3>
-                        <h4 class="dish__price">$ 18.00</h4>
-                        <p class="dish__text">Meze is a large set of snacks that allows you to get to know the flavors of Greek cuisine better</p>
-                    <button type="button" class="dish__button">More details</button>
-                </div>    
+                <div class="header-container">
+                    <a  href="index.html">
+                    <img class="header-logo" src="./img/desktop/logo desktop.svg" alt="logo">
+                    </a>
+                        <div class="nav-wrapper">
+                            <nav class="nav" >
+                                <ul class="nav-list">
+                                    <li class="list nav__item-current">
+                                        <a class="nav__link link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="list nav__item">
+                                        <a class="nav__link link" href="about.html">About us</a>
+                                    </li>
+                                    <li class="list nav__item">
+                                        <a class="nav__link link" href="menu.html">Menu</a>
+                                    </li>
+                                    <li class="list nav__item">
+                                        <a class="nav__link link" href="catering.html">Catering</a>
+                                    </li>
+                                    <li class="list nav__item">
+                                        <a class="nav__link link" href="contacts.html">Contacts</a>
+                                    </li>
+                                    
+                                </ul>
+                            </nav>
+                            <button type="button" class="header-button">view the menu</button>
+                        </div>
+                            <button type="button" class="menu-open-button"> <img src="./svg/menu-button.svg" alt=""></button>
                 </div>
-                </a>
-            </li>
-            <li class="list work__item">
-                <a href="">
-<picture>
-                            <source 
-                        srcset="
-                        ./images/dishes/porcupines-desktop-1x.png 1x,
-                        ./images/dishes/porcupines-desktop-2x.png 2x"
-                        media="(min-width: 1440px)"
-                        />
-    
-                        <source srcset="
-                        ./images/dishes/porcupines-mobile-1x.png 1x, 
-                        ./images/dishes/porcupines-mobile-2x.png 2x"
-                        media="(min-width: 378px)"
-                        />
-    
-                        <img 
-                        class="dish__image" 
-                        src="./images/dishes/porcupines-mobile-2x.png" 
-                        alt="Dish" 
-                        
-                        />
-                    </picture>
-                    <div class="dish-header">
-                        <h3 class="dish__card-header">Porcupines</h3>
-                        <h4 class="dish__price">$ 20.00</h4>
-                        <p class="dish__text">We serve it, as in Greece. A whole pallet of feta cheese, only kalamata olives and real Greek olive oil</p>
-                    <button type="button" class="dish__button">More details</button>
+            </div>
+                <div class="mob-menu is-hidden">
+                    <div class="mob-container">
+                        <button class="menu-close-btn" type="button">
+                            <img src="./svg/modal-close-blue-button.svg" alt="">
+                        </button>
+                        <nav class="mob-nav" >
+                            <ul class="mob-menu-list">
+                                <li class="list mob__item-current mob__item">
+                                    <a class="mob__link link" href="index.html">Home</a>
+                                </li>
+                                <li class="list mob__item">
+                                    <a class="mob__link link" href="./about.html">About us</a>
+                                </li>
+                                <li class="list mob__item">
+                                    <a class="mob__link link" href="./menu.html">Menu</a>
+                                </li>
+                                <li class="list mob__item">
+                                    <a class="mob__link link" href="./catering.html">Catering</a>
+                                </li>
+                                <li class="list mob__item">
+                                    <a class="mob__link link" href="./contacts.html">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-            </a>
-            </li>
-            <li class="list work__item">
-                <a href="">
-<picture>
-                            <source 
-                        srcset="
-                        ./images/dishes/mousaka-desktop-1x.png 1x,
-                        ./images/dishes/mousaka-desktop-2x.png 2x"
-                        media="(min-width: 1440px)"
-                        />
-    
-                        <source srcset="
-                        ./images/dishes/mousaka-mobile-1x.png 1x, 
-                        ./images/dishes/mousaka-mobile-2x.png 2x"
-                        media="(min-width: 378px)"
-                        />
-    
-                        <img 
-                        class="dish__image" 
-                        src="./images/dishes/mousaka-mobile-2x.png" 
-                        alt="Dish" 
-                        
-                        />
-                    </picture>
-                    <div class="dish-header">
-                        <h3 class="dish__card-header">Moussaka</h3>
-                        <h4 class="dish__price">$ 11.00</h4>
-                        <p class="dish__text">Baked dish of fresh eggplant, potatoes, seasoned ground beef and creamy bechamel sauce</p>
-                    <button type="button" class="dish__button">More details</button>
+                </div>
+                </header>
+                <main>
+                    <section class="hero">
+                        <div class="container">
+                            <div class="hero-wrapper">
+                                <div class="header-title">
+                                    <img class="hero-logo" src="./img/desktop/logo desktop.svg" alt="logo">
+                                    <h1 class="hero__header">Artemis</h1>
+                                    <p class="hero-text">Greek Restaurant</p>
+                                    <h2 class="hero-second-header">Where flavors meet tradition</h2>
+                                    <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+                                        <div class="mobile-background-picture">  
+                                            <picture>
+                                                <source 
+                                                srcset="
+                                                ./images/hero/desktop/hero-1x.png 1x,
+                                                ./images/hero/desktop/hero-2x.png 2x"
+                                                media="(min-width: 1440px)"
+                                                />
+                                                <source srcset="
+                                                ./images/hero/mobile/hero-mob-1x.png 1x, 
+                                                ../images/hero/mobile/hero-mob-2x.png 2x"
+                                                media="(min-width: 378px)"
+                                                />
+                                                <img 
+                                                class="mob-hero__image" 
+                                                src="./images/hero/desktop/hero-1x.png" 
+                                                alt="restaurant-hall" />
+                                            </picture>
+                                        </div>   
+                                </div>  
+                                        <div class="hero-image">
+                                        </div>
+                            </div>
+                        </div>
                     </div>
-            </a>
-            </li>
-        </ul>
-    </div>
-    </div>
-    </section>
-    
-    <section class="gallery">
-            <div class="gallery-container">
-                <h2 class="gallery__header">Gallery</h2>
-            <ul class="gallery-list">
-                <li class="gallery__item"><button type="button" class="gallery-button">General info</button></li>
-                <li class="gallery__item"><button type="button" class="gallery-button">Interior</button></li>
-                <li class="gallery__item"><button type="button" class="gallery-button">Dishes</button></li>
-                <li class="gallery__item"><button type="button" class="gallery-button">Catering</button></li>
-            </ul>        
-            <ul class="grid">
-                <li class="list grid__item">
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item1-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item1-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item1-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item1-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item1-2x.png" 
-                            alt="bar" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-
-                <li class="list grid__item">
-                    <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item2-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item2-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item2-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item2-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item2-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-
-                <li class="list grid__item">
+                    </section>
+                    <section class="story">
+                    <div class="story-container">
+                        <h2 class="story-title">Short story about us</h2>
+                            <div class="story-wrapper">
+                                <div class="story-image">
+                                        <picture>
+                                            <source 
+                                            srcset="
+                                            ./images/story/desktop/story-picture-desktop-1x.png 1x,
+                                            ./images/story/desktop/story-picture-desktop-2x.png 2x"
+                                            media="(min-width: 1440px)"
+                                            />
+                        
+                                            <source srcset="
+                                            ./images/story/mobile/story-picture-mobile-1x.png 1x, 
+                                            ./images/story/mobile/story-picture-mobile-2x.png 2x"
+                                            media="(min-width: 378px)"
+                                            />
+                        
+                                            <img 
+                                            class="mob-hero__image" 
+                                            src="./images/story/desktop/story-picture-desktop-1x.png" 
+                                            alt="restaurant-room"/>
+                                        </picture>   
+                                </div>
+                                    <div class="story__text-block">
+                                        <p class="story-text">When we chose a place for our restaurant, we really wanted it to be special for you. And we were lucky. We found the perfect place with an incredible terrace.
+                                        <p class="story-text">When you step in our restaurant, you’ll not only be met with the sights and smells of our traditional recipes, but be greeted as a member of our family.</p>
+                                        <p class="story-text">Using fresh, locally-sourced produce, seafood, and meat, we’re bringing culture to life in every bite.</p>
+                                        <p class="story-text-big">We invite you!</p>
+                                            <div class="story-button__container">
+                                                <button type="button" class="story-button">view the menu</button>
+                                                <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+                                            </div> 
+                                    </div>
+                            </div>
+                    </div>
+                    </section>
+                    <section class="dishes">
+                    <div class="container">
+                        <div class="dish-wrapper">
+                            <h2 class="dish__header">Specialty dishes</h2>
+                                <ul class="dish__list" >
+                                    <li class="list work__item">
+                                        <a href="">
+                                            <div class="dish-card">
+                                                        <picture>
+                                                            <source 
+                                                            srcset="
+                                                            ./images/dishes/assortie-desktop-1x.png 1x,
+                                                            ./images/dishes/assortie-desktop-2x.png 2x"
+                                                            media="(min-width: 1440px)"
+                                                            />
                                         
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item3-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item3-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item3-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item3-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item3-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
+                                                            <source srcset="
+                                                            ./images/dishes/assortie-mobile-1x.png 1x, 
+                                                            ./images/dishes/assortie-mobile-2x.png 2x"
+                                                            media="(min-width: 378px)"
+                                                            />
+                                        
+                                                            <img 
+                                                            class="dish__image" 
+                                                            src="./images/dishes/assortie-mobile-2x.png"                                         
+                                                            alt="Dish"/>
+                                                        </picture>
+                                                    <div class="dish-header">
+                                                        <h3 class="dish__card-header">Assorted meze</h3>
+                                                        <h4 class="dish__price">$ 18.00</h4>
+                                                        <p class="dish-main__text">Meze is a large set of snacks that allows you to get to know the flavors of Greek cuisine better</p>
+                                                        <button type="button" class="dish__button">More details</button>
+                                                    </div>    
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="list work__item">
+                                        <a href="">
+                                                <picture>
+                                                        <source 
+                                                    srcset="
+                                                    ./images/dishes/porcupines-desktop-1x.png 1x,
+                                                    ./images/dishes/porcupines-desktop-2x.png 2x"
+                                                    media="(min-width: 1440px)"
+                                                    />
+                                                    <source srcset="
+                                                    ./images/dishes/porcupines-mobile-1x.png 1x, 
+                                                    ./images/dishes/porcupines-mobile-2x.png 2x"
+                                                    media="(min-width: 378px)"
+                                                    />
+                                                    <img 
+                                                    class="dish__image" 
+                                                    src="./images/dishes/porcupines-mobile-2x.png" 
+                                                    alt="Dish" />
+                                            </picture>
+                                                <div class="dish-header">
+                                                    <h3 class="dish__card-header">Porcupines</h3>
+                                                    <h4 class="dish__price">$ 20.00</h4>
+                                                    <p class="dish-main__text">We serve it, as in Greece. A whole pallet of feta cheese, only kalamata olives and real Greek olive oil</p>
+                                                    <button type="button" class="dish__button">More details</button>
+                                                </div>
+                                        </a>
+                                    </li>
+                                    <li class="list work__item">
+                                        <a href="">
+                                            <picture>
+                                                    <source 
+                                                    srcset="
+                                                    ./images/dishes/mousaka-desktop-1x.png 1x,
+                                                    ./images/dishes/mousaka-desktop-2x.png 2x"
+                                                    media="(min-width: 1440px)"
+                                                    />
+                                                    <source srcset="
+                                                    ./images/dishes/mousaka-mobile-1x.png 1x, 
+                                                    ./images/dishes/mousaka-mobile-2x.png 2x"
+                                                    media="(min-width: 378px)"
+                                                    />
+                                                    <img 
+                                                    class="dish__image" 
+                                                    src="./images/dishes/mousaka-mobile-2x.png" 
+                                                    alt="Dish"/>
+                                            </picture>
+                                            <div class="dish-header">
+                                                <h3 class="dish__card-header">Moussaka</h3>
+                                                <h4 class="dish__price">$ 11.00</h4>
+                                                <p class="dish-main__text">Baked dish of fresh eggplant, potatoes, seasoned ground beef and creamy bechamel sauce</p>
+                                            <button type="button" class="dish__button">More details</button>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    </section>
+                    <section class="gallery">
+                        <div class="gallery-container">
+                            <h2 class="gallery__header">Gallery</h2>
+                                <ul class="gallery-list">
+                                    <li class="gallery__item"><button type="button" class="gallery-button">General info</button></li>
+                                    <li class="gallery__item"><button type="button" class="gallery-button">Interior</button></li>
+                                    <li class="gallery__item"><button type="button" class="gallery-button">Dishes</button></li>
+                                    <li class="gallery__item"><button type="button" class="gallery-button">Catering</button></li>
+                                </ul>        
+                                <ul class="grid">
+                                    <li class="list grid__item">
+                                            <picture>
+                                                <source 
+                                                srcset="
+                                                ./images/gallery/desktop/desktop-item1-1x.png 1x,
+                                                ./images/gallery/desktop/desktop-item1-2x.png 2x"
+                                                media="(min-width: 1200px)"
+                                                />
+                                                <source srcset="
+                                                ./images/gallery/mobile/mobile-item1-1x.png 1x,
+                                                ./images/gallery/mobile/mobile-item1-2x.png 2x"
+                                                media="(min-width: 370px)"
+                                                />
+                                                <img 
+                                                src="./images/gallery/desktop/mobile-item1-2x.png" 
+                                                alt="bar" 
+                                                width="450"
+                                                height="294"/>
+                                            </picture>
+                                    </li>
+                                    <li class="list grid__item">
+                                            <picture>
+                                                    <source 
+                                                    srcset="
+                                                    ./images/gallery/desktop/desktop-item2-1x.png 1x,
+                                                    ./images/gallery/desktop/desktop-item2-2x.png 2x"
+                                                    media="(min-width: 1200px)"
+                                                    />
+                                    
+                                                    <source srcset="
+                                                    ./images/gallery/mobile/mobile-item2-1x.png 1x,
+                                                    ./images/gallery/mobile/mobile-item2-2x.png 2x"
+                                                    media="(min-width: 370px)"
+                                                    />
+                                
+                                                    <img 
+                                                    src="./images/gallery/desktop/mobile-item2-2x.png" 
+                                                    alt="work in restaurant" 
+                                                    width="450"
+                                                    height="294"/>
+                                                </picture>
+                                    </li>
+                                    <li class="list grid__item">               
+                                                <picture>
+                                                    <source 
+                                                    srcset="
+                                                    ./images/gallery/desktop/desktop-item3-1x.png 1x,
+                                                    ./images/gallery/desktop/desktop-item3-2x.png 2x"
+                                                    media="(min-width: 1200px)"
+                                                    />
+                                    
+                                                    <source srcset="
+                                                    ./images/gallery/mobile/mobile-item3-1x.png 1x,
+                                                    ./images/gallery/mobile/mobile-item3-2x.png 2x"
+                                                    media="(min-width: 370px)"
+                                                    />
+                                
+                                                    <img 
+                                                    src="./images/gallery/desktop/mobile-item3-2x.png" 
+                                                    alt="work in restaurant" 
+                                                    width="450"
+                                                    height="294"/>
+                                                </picture>
+                                    </li>
+                                    <li class="list grid__item">
+                                                <picture>
+                                                    <source 
+                                                    srcset="
+                                                    ./images/gallery/desktop/desktop-item4-1x.png 1x,
+                                                    ./images/gallery/desktop/desktop-item4-2x.png 2x"
+                                                    media="(min-width: 1200px)"
+                                                    />
+                                                    <source srcset="
+                                                    ./images/gallery/mobile/mobile-item4-1x.png 1x,
+                                                    ./images/gallery/mobile/mobile-item4-2x.png 2x"
+                                                    media="(min-width: 370px)"
+                                                    />
+                                                    <img 
+                                                    src="./images/gallery/desktop/mobile-item4-2x.png" 
+                                                    alt="man and burger" 
+                                                    width="450"
+                                                    height="294"/>
+                                                </picture>
+                                    </li>
+                                    <li class="grid__item">
+                                                <picture>
+                                                    <source 
+                                                    srcset="
+                                                    ./images/gallery/desktop/desktop-item5-1x.png 1x,
+                                                    ./images/gallery/desktop/desktop-item5-2x.png 2x"
+                                                    media="(min-width: 1200px)"
+                                                    />
+                                                    <source srcset="
+                                                    ./images/gallery/mobile/mobile-item5-1x.png 1x,
+                                                    ./images/gallery/mobile/mobile-item5-2x.png 2x"
+                                                    media="(min-width: 370px)"
+                                                    />
+                                                    <img 
+                                                    src="./images/gallery/desktop/mobile-item5-2x.png" 
+                                                    alt="work in restaurant" 
+                                                    width="450"
+                                                    height="294"/>
+                                                </picture>
+                                    </li>
+                                    <li class="list grid__item">
+                                                <picture>
+                                                    <source 
+                                                    srcset="
+                                                    ./images/gallery/desktop/desktop-item6-1x.png 1x,
+                                                    ./images/gallery/desktop/desktop-item6-2x.png 2x"
+                                                    media="(min-width: 1200px)"
+                                                    />
+                                    
+                                                    <source 
+                                                    srcset="
+                                                    ./images/gallery/mobile/mobile-item6-1x.png 1x,
+                                                    ./images/gallery/mobile/mobile-item6-2x.png 2x"
+                                                    media="(min-width: 370px)"
+                                                    />
+                                
+                                                    <img 
+                                                    src="./images/gallery/desktop/mobile-item6-2x.png" 
+                                                    alt="work in restaurant" 
+                                                    width="450"
+                                                    height="294"/>
+                                                </picture>
+                                    </li>
+                                </ul>
+                                <ul class="mark-list">
+                                    <li class="mark-item"> <img src="./images/gallery/mobile/arrow-back.png" alt="arrow-back"> </li>
+                                    <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 1.png" alt="elipse"></li>
+                                    <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
+                                    <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
+                                    <li class="mark-item"><img src="./images/gallery/mobile/arrow-forward.png" alt="arrow-fwd"></li>
+                                </ul>
+                        </div>
+                    </section>
+                    <section class="reserve">
+                        <div class="reserve-container">
+                            <div class="reserve-wrapper">
+                                    <div class="reserve-image">
+                                    </div>
+                                <div class="reserve__form">
+                                    <h2 class="reserve-title">Reserve table in restaurant</h2>
+                                    <p class="reserve-text">Book a table for an unforgettable evening</p>
+                                    <form class="input-form" action="">
+                                        <div class="input-wrap">
+                                            <svg class="form-icon" width="24" height="24">
+                                            <use href="./images/icons/icons.svg#icon-phone" ></use>
+                                            </svg>
+                                                <input 
+                                                class="reserve-input" 
+                                                type="tel" 
+                                                placeholder="Telephone number" 
+                                                >
+                                        </div>
+                                        <div class="input-wrap">
+                                            <svg class="form-icon" width="24" height="24">
+                                                <use href="./images/icons/icons.svg#icon-pupil" ></use>
+                                            </svg>
+                                                <input 
+                                                    class="reserve-input" 
+                                                    type="number" 
+                                                    placeholder="Number of guests" 
+                                                >
+                                        </div>
+                                        <div class="input-wrap">
+                                            <svg class="form-icon" width="24" height="24">
+                                                <use href="./images/icons/icons.svg#icon-date" ></use>
+                                            </svg>
+                                                <input 
+                                                    class="reserve-input" 
+                                                    type="text" 
+                                                    placeholder="Date" 
+                                                >
+                                        </div>
+                                        <div class="input-wrap">
+                                            <svg class="form-icon" width="24" height="24">
+                                                <use href="./images/icons/icons.svg#icon-time" ></use>
+                                            </svg>
+                                                <input 
+                                                    class="reserve-input" 
+                                                    type="text" 
+                                                    placeholder="Time" 
+                                                >
+                                        </div>
+                                        <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="contacts">
+                        <div class="contacts-container">
+                            <h2 class="contacts-header">Contacts</h2>
+                            <div class="contact-wrapper">
+                                    <div class="adress">
+                                        <p class="contacts-text">How To Reach Us</p>
+                                        <a href="tel:+38 (096) 330-05-33" class="phone-first-p">+38 (096) 330-05-33</a>
+                                        <a href="artemis.restaurant@mail.com" class="mail-first-p">artemis.restaurant@mail.com</a>
+                                </div>
+                                <div class="adress-first">
+                                    <p class="contacts-text">Where To Find Us</p>
+                                    <adress class="adress-first-p">Kyiv, st. Ivan Franko, 435</adress>
+                                </div>
+                                <div class="open-hours">
+                                <p class="contacts-text">Open Hours</p>
+                                    <div class="work-hours">
+                                        <ul class="days-list">
+                                            <li class="hours-item">Monday - Thursday</li>
+                                            <li class="hours-item">Friday</li>
+                                            <li class="hours-item">Saturday</li>
+                                            <li class="hours-item">Sunday</li>
+                                        </ul>
+                                        <ul class="hours-list">
+                                            <li class="hours-item">11:00am - 09:00pm</li>
+                                            <li class="hours-item">11:00am - 10:00pm</li>
+                                            <li class="hours-item">03:00pm - 10:00pm</li>
+                                            <li class="hours-item">12:00pm - 09:00pm</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="soc-networks">
+                                    <p class="contacts-text">Read Us</p>
+                                    <ul class="soc-list">
+                                        <li class="soc-items">
+                                            <a href="soc-links">
+                                                <svg class="facebook-icon" width="26" height="26">
+                                                    <use href="./images/icons/icons.svg#icon-instagram-dark"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="soc-items"> 
+                                            <a href="soc-links">
+                                                <svg class="instagram-icon" width="26" height="26">
+                                                    <use href="./images/icons/icons.svg#icon-facebook-dark"></use>
+                                                </svg>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
                 
-                <li class="list grid__item">
-                        
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item4-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item4-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item4-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item4-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item4-2x.png" 
-                            alt="man and burger" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-                <li class="grid__item">
-                        
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item5-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item5-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source srcset="
-                            ./images/gallery/mobile/mobile-item5-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item5-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item5-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-                <li class="list grid__item">
-                        
-                        <picture>
-                            <source 
-                            srcset="
-                            ./images/gallery/desktop/desktop-item6-1x.png 1x,
-                            ./images/gallery/desktop/desktop-item6-2x.png 2x"
-                            media="(min-width: 1200px)"
-                            />
-              
-                            <source 
-                            srcset="
-                            ./images/gallery/mobile/mobile-item6-1x.png 1x,
-                            ./images/gallery/mobile/mobile-item6-2x.png 2x"
-                            media="(min-width: 370px)"
-                            />
-        
-                            <img 
-                            src="./images/gallery/desktop/mobile-item6-2x.png" 
-                            alt="work in restaurant" 
-                            width="450"
-                            height="294"/>
-                        </picture>
-                </li>
-            </ul>
-            <ul class="mark-list">
-                <li class="mark-item"> <img src="./images/gallery/mobile/arrow-back.png" alt="arrow-back"> </li>
-                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 1.png" alt="elipse"></li>
-                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
-                <li class="mark-item"><img src="./images/gallery/mobile/Ellipse 2.png" alt="elipse"></li>
-                <li class="mark-item"><img src="./images/gallery/mobile/arrow-forward.png" alt="arrow-fwd"></li>
-            </ul>
-        </div>
-        </section>
-        
-    <section class="reserve">
-            <div class="reserve-container">
-            <div class="reserve-wrapper">
-              <div class="container">
-            <div class="reserve-image">
-            </div>
-<div class="reserve__form">
-    <h2 class="reserve-title">Reserve table in restaurant</h2>
-    <p class="reserve-text">Book a table for an unforgettable evening</p>
-    <form class="input-form" action="">
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-phone" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="tel" 
-        placeholder="Telephone number" 
-        >
-    </div>
-
-        <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-pupil" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="number" 
-        placeholder="Number of guests" 
-        >
-    </div>
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-date" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="text" 
-        placeholder="Date" 
-       >
-    </div>
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-time" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="text" 
-        placeholder="Time" 
-        >
-    </div>
-        <button  class="hero__button pointer" type="button" data-modal-open>Book a table</button>
-
-    </form>
-</div>
-</div>
-</div>
-</div>
-</section>
-   <section class="contacts">
-    <div class="contacts-container">
-        <h2 class="contacts-header">Contacts</h2>
-        <div class="contact-wrapper">
-            <div class="adress">
-                <p class="contacts-text">How To Reach Us</p>
-                <a href="tel:+38 (096) 330-05-33" class="phone-first">+38 (096) 330-05-33</a>
-                <a href="artemis.restaurant@mail.com" class="mail-first">artemis.restaurant@mail.com</a>
-            </div>
-            <div class="adress-first">
-                <p class="contacts-text">Where To Find Us</p>
-                <adress class="adress-first">Kyiv, st. Ivan Franko, 435</adress>
-            </div>
-            <div class="open-hours">
-            <p class="contacts-text">Open Hours</p>
-            <div class="work-hours">
-            <ul class="days-list">
-                <li class="hours-item">Monday - Thursday</li>
-                <li class="hours-item">Friday</li>
-                <li class="hours-item">Saturday</li>
-                <li class="hours-item">Sunday</li>
-            </ul>
-            <ul class="hours-list">
-                <li class="hours-item">11:00am - 09:00pm</li>
-                <li class="hours-item">11:00am - 10:00pm</li>
-                <li class="hours-item">03:00pm - 10:00pm</li>
-                <li class="hours-item">12:00pm - 09:00pm</li>
-            </ul>
+                <footer class="footer">
+                        <div class="footer-block">
+                    <a  href="index.html">
+                <img class="footer-logo" src="./img/desktop/logo desktop.svg" alt="logo">
+            </a>
+            <div class="footer-lp">
+                <p class="footer-text">© 2022 Artemis. Made with <span class="heart">&#10084;</span></p>
+                <p class="footer-text">Terms and conditions</p>
+                <p class="footer-text">Privacy statement</p>
             </div>
             </div>
-            <div class="soc-networks">
-                <p class="contacts-text">Read Us</p>
-                
-                <ul class="soc-list">
-                    <li class="soc-items">
-                        <a href="soc-links">
-                        <svg class="instagram-icon" width="46" height="46">
-                            <use href="./images/icons/icons.svg#icon-instagram"></use>
+            </footer>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                        <button class="modal-close-button" type="button" data-modal-close>
+                        <svg class="modal-close-icon" width="40" height="40" >
+                            <use href="./images/icons/icons.svg#icon-modal-close-button">
+                            </use>
                         </svg>
-                    </a>
-                    </li>
-                    <li class="soc-items"> 
-                        <a href="soc-links">
-                        <svg class="instagram-icon" width="46" height="46">
-                            <use href="./images/icons/icons.svg#icon-facebook"></use>
+                    </button>
+                    <div class="modal__form">
+                        <h2 class="modal-title">Reserve table in restaurant</h2>
+                        <p class="modal-text">Book a table for an unforgettable evening</p>
+                        <form class="input-form" action="">
+                        <div class="input-wrap">
+                            <svg class="form-icon" width="24" height="24">
+                            <use href="./images/icons/icons.svg#icon-phone" ></use>
                         </svg>
-                    </a>
-                </li>
-                    
-                </ul>
+                            <input 
+                            class="reserve-input" 
+                            type="tel" 
+                            placeholder="Telephone number" 
+                            >
+                        </div>
+                            <div class="input-wrap">
+                            <svg class="form-icon" width="24" height="24">
+                            <use href="./images/icons/icons.svg#icon-pupil" ></use>
+                        </svg>
+                            <input 
+                            class="reserve-input" 
+                            type="number" 
+                            placeholder="Number of guests" 
+                            >
+                        </div>
+                        <div class="input-wrap">
+                            <svg class="form-icon" width="24" height="24">
+                            <use href="./images/icons/icons.svg#icon-date" ></use>
+                        </svg>
+                            <input 
+                            class="reserve-input" 
+                            type="text" 
+                            placeholder="Date" 
+                        >
+                        </div>
+                        <div class="input-wrap">
+                            <svg class="form-icon" width="24" height="24">
+                            <use href="./images/icons/icons.svg#icon-time" ></use>
+                        </svg>
+                            <input 
+                            class="reserve-input" 
+                            type="text" 
+                            placeholder="Time" 
+                            >
+                        </div>
+                            <button  class="hero__button pointer" type="button">Book a table</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-   </section>
-
-   </section>
-    
-    </main>
-     
-    <footer class="footer">
-            <div class="footer-block">
-        <a  href="index.html">
-    <img class="footer-logo" src="./img/desktop/logo desktop.svg" alt="logo">
-</a>
-<div class="footer-lp">
-    <p class="footer-text">© 2022 Artemis. Made with <span class="heart">&#10084;</span></p>
-    <p class="footer-text">Terms and conditions</p>
-    <p class="footer-text">Privacy statement</p>
-</div>
-</div>
-</footer>
-
-<!-- "backdrop is-hidden" -->
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-             <button class="modal-close-button" type="button" data-modal-close>
-            <svg class="modal-close-icon" width="40" height="40" >
-                <use href="./images/icons/icons.svg#icon-modal-close-button">
-                </use>
-            </svg>
-        </button>
-        <div class="modal__form">
-    <h2 class="modal-title">Reserve table in restaurant</h2>
-    <p class="modal-text">Book a table for an unforgettable evening</p>
-    <form class="input-form" action="">
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-phone" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="tel" 
-        placeholder="Telephone number" 
-        >
-    </div>
-
-        <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-pupil" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="number" 
-        placeholder="Number of guests" 
-        >
-    </div>
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-date" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="text" 
-        placeholder="Date" 
-       >
-    </div>
-    <div class="input-wrap">
-        <svg class="form-icon" width="24" height="24">
-        <use href="./images/icons/icons.svg#icon-time" ></use>
-    </svg>
-        <input 
-        class="reserve-input" 
-        type="text" 
-        placeholder="Time" 
-        >
-    </div>
-        <button  class="hero__button pointer" type="button">Book a table</button>
-
-    </form>
-</div>
-</div>
-</div>
-
-
-<script src="./js/modal.js"></script>
-<script src="./js/menu.js"></script> 
-</body>
+        <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script> 
+    </body>
 </html>

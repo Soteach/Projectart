@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemis/Catering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+<link
+        rel="icon"
+        type="image/png"
+        width="64" height="64"
+        href="./img/logo.png"
+    />
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="container">
+        <div class="header-container">
+<a  href="index.html">
+    <img class="header-logo" src="./img/desktop/logo desktop.svg" alt="logo">
+</a>
+<div class="nav-wrapper">
+    <nav class="nav" >
+    <ul class="nav-list">
+        <li class="list nav__item">
+            <a class="nav__link link" href="index.html">Home</a>
+        </li>
+        <li class="list nav__item">
+            <a class="nav__link link" href="about.html">About us</a>
+        </li>
+        <li class="list nav__item">
+            <a class="nav__link link" href="menu.html">Menu</a>
+        </li>
+        <li class="list nav__item">
+            <a class="nav__link link" href="catering.html">Catering</a>
+        </li>
+        <li class="list nav__item-current">
+            <a class="nav__link link" href="contacts.html">Contacts</a>
+        </li>
+    </ul>
+</nav>
+<button type="button" class="header-button">view the menu</button>
+</div>
+<button type="button" class="menu-open-button"> <img src="./svg/menu-button.svg" alt=""></button>
+</div>
+</div>
+<div class="mob-menu is-hidden">
+    <div class="mob-container">
+    <button class="menu-close-btn" type="button">
+        <img src="./svg/modal-close-blue-button.svg" alt="">
+    </button>
+    <nav class="mob-nav" >
+        <ul class="mob-menu-list">
+            <li class="list mob__item ">
+                <a class="mob__link link" href="index.html">Home</a>
+            </li>
+            <li class="list mob__item">
+                <a class="mob__link link" href="./about.html">About us</a>
+            </li>
+            <li class="list mob__item">
+                <a class="mob__link link" href="./menu.html">Menu</a>
+            </li>
+            <li class="list mob__item-current mob__item">
+                <a class="mob__link link" href="./catering.html">Catering</a>
+            </li>
+            <li class="list mob__item">
+                <a class="mob__link link" href="./contacts.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</div>
+    </header>
+    <main>
+    <section class="about-contacts">
+    <div class="about-contacts-container">
+        <h2 class="about-contacts-header">Contacts</h2>
+        <div class="about-contact-wrapper">
+            <div class="adress">
+                <p class="about-contacts-text">How To Reach Us</p>
+                <a href="tel:+38 (096) 330-05-33" class="phone">+38 (096) 330-05-33</a>
+                <a href="artemis.restaurant@mail.com" class="mail">artemis.restaurant@mail.com</a>
+            </div>
+            <div class="adress">
+                <p class="about-contacts-text">Where To Find Us</p>
+                <adress>Kyiv, st. Ivan Franko, 435</adress>
+            </div>
+            <div class="about-open-hours">
+            <p class="about-contacts-text">Open Hours</p>
+            <div class="about-work-hours">
+            <ul class="about-days-list">
+                <li class="hours-item">Monday - Thursday</li>
+                <li class="hours-item">Friday</li>
+                <li class="hours-item">Saturday</li>
+                <li class="hours-item">Sunday</li>
+            </ul>
+            <ul class="about-hours-list">
+                <li class="hours-item">11:00am - 09:00pm</li>
+                <li class="hours-item">11:00am - 10:00pm</li>
+                <li class="hours-item">03:00pm - 10:00pm</li>
+                <li class="hours-item">12:00pm - 09:00pm</li>
+            </ul>
+            </div>
+            </div>
+            <div class="soc-networks">
+                <p class="contacts-text">Read Us</p>
+                
+                <ul class="about-soc-list">
+                    <li class="soc-items">
+                        <a href="soc-links">
+                        <svg class="instagram-icon" width="22" height="22">
+                            <use href="./images/icons/icons.svg#icon-instagram-dark"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="soc-items"> 
+                        <a href="soc-links">
+                        <svg class="instagram-icon" width="22" height="22">
+                            <use href="./images/icons/icons.svg#icon-facebook-dark"></use>
+                        </svg>
+                    </a>
+                </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    </section>
+    </main>
+    <footer class="footer">
+            <div class="footer-block">
+        <a  href="index.html">
+    <img class="footer-logo" src="./img/desktop/logo desktop.svg" alt="logo">
+</a>
+<div class="footer-lp">
+    <p class="footer-text">© 2022 Artemis. Made with <span class="heart">&#10084;</span></p>
+    <p class="footer-text">Terms and conditions</p>
+    <p class="footer-text">Privacy statement</p>
+</div>
+</div>
+</footer>
+<!-- "backdrop is-hidden" -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+             <button class="modal-close-button" type="button" data-modal-close>
+            <svg class="modal-close-icon" width="40" height="40" >
+                <use href="./images/icons/icons.svg#icon-modal-close-button">
+                </use>
+            </svg>
+        </button>
+        <div class="modal__form">
+    <h2 class="modal-title">Reserve table in restaurant</h2>
+    <p class="modal-text">Book a table for an unforgettable evening</p>
+    <form class="input-form" action="">
+    <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-phone" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="tel" 
+        placeholder="Telephone number" 
+        >
+    </div>
+        <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-pupil" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="number" 
+        placeholder="Number of guests" 
+        >
+    </div>
+    <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-date" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="text" 
+        placeholder="Date" 
+        >
+    </div>
+    <div class="input-wrap">
+        <svg class="form-icon" width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-time" ></use>
+    </svg>
+        <input 
+        class="reserve-input" 
+        type="text" 
+        placeholder="Time" 
+        >
+    </div>
+        <button  class="hero__button pointer" type="button">Book a table</button>
+    </form>
+</div>
+</div>
+</div>
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script> 
+</body>
+</html>

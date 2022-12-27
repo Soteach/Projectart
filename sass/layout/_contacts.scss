@@ -54,13 +54,14 @@
     margin-bottom: 32px;
   }
 }
-.adress-first {
+.adress-first-p {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
   color: $main-color;
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
+    color: $dark-blue-color;
   }
 }
 
@@ -95,6 +96,32 @@
 
 .phone-first {
   color: $main-color;
+}
+
+.phone-first-p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-color;
+  @media screen and (max-width: 767px) {
+    color: $dark-blue-color;
+    text-align: center;
+  }
+}
+
+.mail-first-p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-color;
+  @media screen and (max-width: 767px) {
+    color: $dark-blue-color;
+    text-align: center;
+  }
 }
 
 .adress-first {
@@ -181,4 +208,10 @@
 
 .soc-list {
   display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.facebook-icon {
+  fill: aliceblue;
 }

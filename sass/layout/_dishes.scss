@@ -1,32 +1,23 @@
 .dishes {
-  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+  background-image: url(../../images/background/background-desk-1x);
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include minimize {
-    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-    }
-  }
-
   @include mobile {
-    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+    background-image: url(../../images/background/background-mob-1x.png);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
+      background-image: url(../../images/background/background-mob-2x.png);
     }
   }
 
   @include desktop {
-    background-image: url(../../images/background/white-concrete-bg-desktop-1x.png);
+    background-image: url(../../images/background/background-desk-1x.png);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+      background-image: url(../../images/background/background-desk-2x.png);
     }
   }
 }
@@ -101,6 +92,22 @@
   align-self: stretch;
   flex-grow: 0;
   margin-bottom: 6px;
+}
+
+.dish-main__text {
+  width: 301px;
+  height: 66px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-blue-color;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 24px;
 }
 
 .dish__text {

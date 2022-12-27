@@ -1,6 +1,70 @@
 .menu-grid {
-  display: inline-flex;
-  // flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+
+  @media screen and (max-width: 767px) {
+    gap: 10px;
+    grid: repeat(4, 120px) / repeat(2, 120px);
+  }
+}
+
+.photo1 {
+  grid-area: 1 / 1 / span 1 / span 2;
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    grid-area: 1/1 / span 1 / span 4;
+  }
+}
+
+.photo2 {
+  grid-area: 1 / 3 / span 1 / span 1;
+
+  @media screen and (max-width: 767px) {
+    grid-area: 2/1 / span 1 / span 1;
+  }
+}
+
+.photo3 {
+  grid-area: 1 / 4 / span 2 / span 2;
+
+  @media screen and (max-width: 767px) {
+    grid-area: 2/2 / span 2 / span 3;
+    padding: 0;
+  }
+}
+
+.photo4 {
+  grid-area: 2 / 1 / span 1 / span 1;
+
+  @media screen and (max-width: 767px) {
+    grid-area: 3/1 / span 1 / span 1;
+  }
+}
+
+.photo5 {
+  grid-area: 2 / 2 / span 1 / span 2;
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    grid-area: 4/1 / span 1 / span 4;
+  }
+}
+
+.menu-grid__item {
+  position: relative;
+  padding: 0 0 51% 0;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .menu-gallery__header {
@@ -29,52 +93,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
-}
-
-.grid-menu-container {
-  display: grid;
-  grid-gap: 20px;
-  justify-content: center;
-  margin-bottom: 32px;
-  //   width: max-content;
-  grid: repeat(2, 256px) / repeat(5, 236px);
-
-  @media screen and (max-width: 767px) {
-    grid: repeat(4, 256px) / repeat(2, 236px);
-  }
-}
-
-.photo1 {
-  background-size: cover;
-  grid-area: 1 / 1 / span 1 / span 2;
-  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-1-1x.png);
-}
-
-.photo2 {
-  background-size: cover;
-  grid-area: 1 / 3 / span 1 / span 1;
-  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-2-1x.png);
-}
-
-.photo3 {
-  background-size: cover;
-  grid-area: 1 / 4 / span 2 / span 2;
-  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-3-1x.png);
-  @media screen and (max-width: 767px) {
-    grid-area: 2 / 2 / span 2 / span 2;
-  }
-}
-
-.photo4 {
-  background-size: cover;
-  grid-area: 2 / 1 / span 1 / span 1;
-  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-4-1x.png);
-}
-
-.photo5 {
-  background-size: cover;
-  grid-area: 2 / 2 / span 1 / span 2;
-  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-5-1x.png);
 }
 
 .menu__card-header {

@@ -1,32 +1,23 @@
 .reserve {
-  background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+  background-image: url(../../images/background/background-desk-1x);
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include minimize {
-    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+  @media screen and (max-width: 768px) {
+    background-image: url(../../images/background/background-mob-1x.png);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
+      background-image: url(../../images/background/background-mob-2x.png);
     }
   }
 
-  @include mobile {
-    background-image: url(../../images/background/white-concrete-bg-mobile-1x.png);
+  @media screen and (max-width: 2100px) {
+    background-image: url(../../images/background/background-desk-1x.png);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/background/white-concrete-bg-mobile-2x.png);
-    }
-  }
-
-  @include desktop {
-    background-image: url(../../images/background/white-concrete-bg-desktop-1x.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/background/white-concrete-bg-desktop-2x.png);
+      background-image: url(../../images/background/background-desk-2x.png);
     }
   }
 }
@@ -34,6 +25,8 @@
 .reserve-container {
   padding: 100px 70px;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @media screen and (max-width: 767px) {
     padding: 0px 0px 60px 0px;
@@ -59,11 +52,15 @@
   background-repeat: no-repeat;
   background-position: right;
 
+  @media screen and (min-width: 766px) {
+  }
+
   @media screen and (max-width: 767px) {
     background-image: url('../../images/reserve/mobile/reserve-main-mob-1x.png');
     background-size: contain;
     background-position: bottom;
     max-width: 594px;
+    margin-top: -200px;
   }
 }
 
