@@ -1,103 +1,97 @@
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid $blue-color;
-    width: 100%;
-    
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $blue-color;
+  width: 100%;
 }
 
-.header-logo{
-    display: block;
-    width: 64px;
-    height: 64px;
-    
+.header-logo {
+  display: block;
+  width: 64px;
+  height: 64px;
 }
 
-.header .container{
-    display: flex; 
-    align-items: center;
-    padding-top: 35px;
-    @media screen and (max-width:880px) {
-        padding-left: 15px;
-        padding-right: 15px;
-    }   
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  @media screen and (max-width: 880px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-.nav-wrapper{
-display: flex;
- @media screen and (max-width:768px) {
-        margin-left: auto;
-        
-    }
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+  }
 }
 
-.nav{
-    display: flex;
-    flex-wrap: nowrap;
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
 
-    @media screen and (max-width:768px) {
-        display: none;
-        
-    }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.nav__link{
-padding:16px 30px 24px 24px;
+.nav__link {
+  padding: 16px 30px 24px 24px;
 
-@media screen and (max-width:880px) {
-        padding:8px 15px 12px 12px;
-    }   
-
+  @media screen and (max-width: 880px) {
+    padding: 8px 15px 12px 12px;
+  }
 }
-.nav__item .nav__item-current{
-    display: flex;
-    height: 68px;
-    
+.nav__item .nav__item-current {
+  display: flex;
+  height: 68px;
 }
 
-.nav__item:first-child{
-    margin-right: 45px;
+.nav__item:first-child {
+  margin-right: 45px;
 }
 
 .nav__item-current .nav__item:not(:last-child) {
-    margin-right: 35px;
+  margin-right: 35px;
 }
-
 
 .nav__link {
-    @include fontStyle (16px, 400, 0.02em, 1.38);
-    color:  $blue-color;
-    
-    @include tranSition ();
+  @include fontStyle(16px, 400, 0.02em, 1.38);
+  color: $blue-color;
 
-    &:hover, 
-    &:focus {
-        color:$gold-color;
-    }   
-}
+  @include tranSition();
 
-.nav__item-current{
-    display: flex;
-    position: relative;
-    align-items: center;
-    & a {
+  &:hover,
+  &:focus {
     color: $gold-color;
+  }
 }
+
+.nav__item-current {
+  display: flex;
+  position: relative;
+  align-items: center;
+  & a {
+    color: $gold-color;
+  }
 }
 
 .nav__item-current::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color:$gold-color;
-    bottom: -2px;
-    left: 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: $gold-color;
+  bottom: -2px;
+  left: 0;
 }

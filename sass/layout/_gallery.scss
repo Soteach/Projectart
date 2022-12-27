@@ -1,8 +1,10 @@
 .gallery-container {
-  //     padding: 100px 70px;
-  //         @media screen and (max-width:767px) {
-  //     padding: 60px 16px;
-  // }
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .gallery__header {

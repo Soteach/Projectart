@@ -54,6 +54,15 @@
     margin-bottom: 32px;
   }
 }
+.adress-first {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  color: $main-color;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
 
 .contacts-text {
   color: $yellow-color;
@@ -84,6 +93,14 @@
   }
 }
 
+.phone-first {
+  color: $main-color;
+}
+
+.adress-first {
+  color: $main-color;
+}
+
 .mail {
   font-family: 'Open Sans';
   font-style: normal;
@@ -95,6 +112,10 @@
     color: $dark-blue-color;
     text-align: center;
   }
+}
+
+.mail-first {
+  color: $main-color;
 }
 
 .adress {

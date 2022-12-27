@@ -1,0 +1,135 @@
+.catering {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: right;
+}
+
+.mobile-background {
+  display: block;
+  height: 100%;
+}
+
+.catering-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.catering-image {
+  min-width: 780px;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: -2%;
+  background-image: url(../../images/catering/desktop/catering-hero-desk-1x.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../images/catering/desktop/catering-hero-desk-2x.png);
+  }
+  @include mintablet {
+    display: none;
+  }
+}
+
+.catering-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 80px;
+  z-index: 1;
+  margin-left: 70px;
+  padding-top: 232px;
+  padding-bottom: 118px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.catering__header {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: $dark-blue-color;
+  margin-bottom: 12px;
+  z-index: 1;
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    color: $gold-color;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.catering-second-header {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: $dark-blue-color;
+  margin-bottom: 32px;
+  z-index: 1;
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    color: $gold-color;
+  }
+
+  @media screen and(max-width: 767px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.catering__text-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  width: 420px;
+  @media screen and (max-width: 767px) {
+    min-width: 343px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.catering-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-blue-color;
+  margin-bottom: 24px;
+  z-index: 1;
+  width: 420px;
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    color: $gold-color;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 343px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.catering-button__container {
+  display: flex;
+  gap: 12px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,124 @@
+.restaurant-dishes {
+  background-color: $blue-color;
+}
+
+.restaurant__header {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $main-color;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.restaurant__header-menu {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $dark-blue-color;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.restaurant-second-header {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.restaurant-wrapper {
+  max-width: 1300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.restaurant-dish__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dish__card-header {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: $gold-color;
+}
+
+.dish__price {
+  font-family: 'GFS Neohellenic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: $yellow-color;
+}
+
+.dish__text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-color;
+}
+
+.restaurant-dishes .work__item {
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      display: none;
+      margin: 0 auto;
+    }
+  }
+}
+
+.tablist {
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}

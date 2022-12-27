@@ -239,19 +239,24 @@ summary {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 100%;
   margin: 0 auto;
+  outline: solid 2px red;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 730px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -317,6 +322,7 @@ img {
 
 .nav-wrapper {
   display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .nav-wrapper {
@@ -1158,6 +1164,12 @@ img {
   top: 10px;
 }
 
+.reserve .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
 .footer {
   background-color: #11467A;
   padding: 100px 70px;
@@ -1168,16 +1180,28 @@ img {
   }
 }
 
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-logo {
   width: 120px;
   height: 100px;
-  margin: 0 auto;
+  margin-left: 90px;
   margin-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  .footer-logo {
+    margin-left: 0;
+  }
 }
 
 .footer-lp {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .footer-lp {
@@ -1639,6 +1663,17 @@ button {
   }
 }
 
+.gallery-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 767px) {
+  .gallery-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .gallery__header {
   width: 183px;
   height: 56px;
@@ -1833,6 +1868,18 @@ button {
   }
 }
 
+.adress-first {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 767px) {
+  .adress-first {
+    margin-bottom: 32px;
+  }
+}
+
 .contacts-text {
   color: #E9AF3F;
   font-family: "GFS Neohellenic";
@@ -1866,6 +1913,14 @@ button {
   }
 }
 
+.phone-first {
+  color: #F8F8F8;
+}
+
+.adress-first {
+  color: #F8F8F8;
+}
+
 .mail {
   font-family: "Open Sans";
   font-style: normal;
@@ -1879,6 +1934,10 @@ button {
     color: #071E34;
     text-align: center;
   }
+}
+
+.mail-first {
+  color: #F8F8F8;
 }
 
 .adress {
@@ -2256,7 +2315,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .about-contacts-container {
-    padding: 0px 16px 60px 16px;
+    padding: 60px 16px 60px 16px;
   }
 }
 
@@ -2526,8 +2585,363 @@ button {
   margin-bottom: 40px;
 }
 
-.item-1 {
-  display: inline-flex;
-  gap: 20px;
+.grid-menu-container {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-bottom: 32px;
+  grid: repeat(2, 256px)/repeat(5, 236px);
+}
+@media screen and (max-width: 767px) {
+  .grid-menu-container {
+    grid: repeat(4, 256px)/repeat(2, 236px);
+  }
+}
+
+.photo1 {
+  background-size: cover;
+  grid-area: 1/1/span 1/span 2;
+  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-1-1x.png);
+}
+
+.photo2 {
+  background-size: cover;
+  grid-area: 1/3/span 1/span 1;
+  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-2-1x.png);
+}
+
+.photo3 {
+  background-size: cover;
+  grid-area: 1/4/span 2/span 2;
+  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-3-1x.png);
+}
+@media screen and (max-width: 767px) {
+  .photo3 {
+    grid-area: 2/2/span 2/span 2;
+  }
+}
+
+.photo4 {
+  background-size: cover;
+  grid-area: 2/1/span 1/span 1;
+  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-4-1x.png);
+}
+
+.photo5 {
+  background-size: cover;
+  grid-area: 2/2/span 1/span 2;
+  background-image: url(../../images/menu/menu-gallery/desktop/menu-desk-gal-5-1x.png);
+}
+
+.menu__card-header {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #F8F8F8;
+}
+
+.menu-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.menu-top-wrap:hover .menu__card-header {
+  transform: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__card-header {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 78px;
+  background-color: rgba(229, 161, 30, 0.58);
+  padding: 20px;
+  transform: translateY(100%);
+}
+
+.restaurant-dishes {
+  background-color: #11467A;
+}
+
+.restaurant__header {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .restaurant__header {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.restaurant__header-menu {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #071E34;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .restaurant__header-menu {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.restaurant-second-header {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .restaurant-second-header {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.restaurant-wrapper {
+  max-width: 1300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+  .restaurant-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.restaurant-dish__list {
+  display: flex;
   flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dish__card-header {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #E5A11E;
+}
+
+.dish__price {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #E9AF3F;
+}
+
+.dish__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #F8F8F8;
+}
+
+@media screen and (max-width: 767px) {
+  .restaurant-dishes .work__item:not(:first-child) {
+    display: none;
+    margin: 0 auto;
+  }
+}
+
+.tablist {
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 767px) {
+  .tablist {
+    display: none;
+  }
+}
+
+.catering {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: right;
+}
+
+.mobile-background {
+  display: block;
+  height: 100%;
+}
+
+.catering-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.catering-image {
+  min-width: 780px;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: -2%;
+  background-image: url(../../images/catering/desktop/catering-hero-desk-1x.png);
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .catering-image {
+    background-image: url(../../images/catering/desktop/catering-hero-desk-2x.png);
+  }
+}
+@media screen and (max-width: 767px) {
+  .catering-image {
+    display: none;
+  }
+}
+
+.catering-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 80px;
+  z-index: 1;
+  margin-left: 70px;
+  padding-top: 232px;
+  padding-bottom: 118px;
+}
+@media screen and (max-width: 768px) {
+  .catering-title {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.catering__header {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: #071E34;
+  margin-bottom: 12px;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .catering__header {
+    color: #E5A11E;
+  }
+}
+@media screen and (max-width: 768px) {
+  .catering__header {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.catering-second-header {
+  font-family: "GFS Neohellenic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #071E34;
+  margin-bottom: 32px;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .catering-second-header {
+    color: #E5A11E;
+  }
+}
+@media screen and (max-width: 767px) {
+  .catering-second-header {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.catering__text-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  width: 420px;
+}
+@media screen and (max-width: 767px) {
+  .catering__text-block {
+    min-width: 343px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.catering-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #071E34;
+  margin-bottom: 24px;
+  z-index: 1;
+  width: 420px;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .catering-text {
+    color: #E5A11E;
+  }
+}
+@media screen and (max-width: 767px) {
+  .catering-text {
+    max-width: 343px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.catering-button__container {
+  display: flex;
+  gap: 12px;
+}
+@media screen and (max-width: 767px) {
+  .catering-button__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
