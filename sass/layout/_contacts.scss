@@ -9,7 +9,7 @@
 
 .reserve-container {
   @media screen and (max-width: 767px) {
-    padding: 0px 16px 60px 16px;
+    padding: 0px 16px 0px 16px;
   }
 }
 
@@ -34,6 +34,7 @@
     color: $dark-blue-color;
     font-size: 36px;
     line-height: 42px;
+    padding-top: 60px;
   }
 }
 
