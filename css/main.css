@@ -2791,6 +2791,32 @@ button {
   transform: translateY(100%);
 }
 
+.restaurant {
+  background-image: url(../../images/background/background-desk-1x);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .restaurant {
+    background-image: url(../../images/background/background-mob-1x.png);
+  }
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .restaurant {
+    background-image: url(../../images/background/background-mob-2x.png);
+  }
+}
+@media screen and (max-width: 2100px) {
+  .restaurant {
+    background-image: url(../../images/background/background-desk-1x.png);
+  }
+}
+@media screen and (max-width: 2100px) and (min-device-pixel-ratio: 2), screen and (max-width: 2100px) and (min-resolution: 192dpi), screen and (max-width: 2100px) and (min-resolution: 2dppx) {
+  .restaurant {
+    background-image: url(../../images/background/background-desk-2x.png);
+  }
+}
+
 .restaurant-dishes {
   background-color: #11467A;
 }
