@@ -1,150 +1,145 @@
 .mob-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);    
-    width: 100vw;
-    height: 100vh;
-    padding: 190px 16px;
-    z-index: 2;
-    @include tablet {
-        display: none;
-    }
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(../../images/background/bg.jpg);
+  width: 100vw;
+  height: 100vh;
+  padding: 190px 16px;
+  z-index: 3;
+  @include tablet {
+    display: none;
+  }
 }
 
 .mob-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.mob__item{
-font-family: 'GFS Neohellenic';
-color: $blue-color;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-width: 100%;
-text-align: center;
+.mob__item {
+  font-family: 'GFS Neohellenic';
+  color: $blue-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: 100%;
+  text-align: center;
 
-&a {
-    
-width: 100%;
-text-align: center;
+  &a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
+.mob__item:not(:last-child) {
+  margin-bottom: 64px;
 }
 
-.mob__item:not(:last-child){
-    margin-bottom: 64px;
-}
-
-.mob__item-current{
-color: $gold-color;
-position: relative;
-        
+.mob__item-current {
+  color: $gold-color;
+  position: relative;
 }
 
 .mob__item-current::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color:$gold-color;
-    bottom: -2px;
-    left: 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: $gold-color;
+  bottom: -2px;
+  left: 0;
 }
 
 .mob-menu-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mob__link {
-    @include fontStyle (40px, 500, 0.02em, 1.17);
-    color: var(--header-color);
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        @include tranSition();
-    }
+  @include fontStyle(40px, 500, 0.02em, 1.17);
+  color: var(--header-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    @include tranSition();
+  }
 }
 
-.mobile-background-picture{
-     @media screen and (min-width:768px) {
-        display: none;
-    }
+.mobile-background-picture {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mob-connect {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .mob__phone {
-    display: block;
-    @include minimize {
-        @include fontStyle (24px, 500, 0.02em, 1.18);
-    }
-    @include fontStyle (34px, 500, 0.02em, 1.18);
-    color: var(--accent-color);
-    padding-bottom: 32px;
-    @include tranSition();
+  display: block;
+  @include minimize {
+    @include fontStyle(24px, 500, 0.02em, 1.18);
+  }
+  @include fontStyle(34px, 500, 0.02em, 1.18);
+  color: var(--accent-color);
+  padding-bottom: 32px;
+  @include tranSition();
 }
 
 .mob__mail {
-    @include fontStyle (24px, 500, 0.02em, 1.17);
-    color: var(--main-font-color);
-    padding-bottom: 64px;
+  @include fontStyle(24px, 500, 0.02em, 1.17);
+  color: var(--main-font-color);
+  padding-bottom: 64px;
 
-    &:hover,
-    &:focus {color:var(--accent-color);
-        @include tranSition();}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    @include tranSition();
+  }
 }
 
 .mob-menu-social {
-    display: flex;
-    @include minimize {
-        @include fontStyle (16px, 500, 0.02em, 1.18);
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  display: flex;
+  @include minimize {
+    @include fontStyle(16px, 500, 0.02em, 1.18);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .social-mob__item:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    @include tranSition();
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  @include tranSition();
 }
 
-.social-mob__item { 
+.social-mob__item {
+  &:not(:last-child) {
+    padding-right: 10px;
+  }
 
-    &:not(:last-child){
-        padding-right: 10px;
-    }
-    
-
-    &:not(:first-child){
-        padding-left: 10px;
-    }
-@media screen and (max-width: 380px) {
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+  @media screen and (max-width: 380px) {
     &:nth-child(2) {
-        border-right: none;
-        }
-        
+      border-right: none;
+    }
+
     padding-bottom: 3px;
     padding-left: 2px;
     padding-right: 3px;
     margin-bottom: 20px;
-
+  }
 }
-    }
 
 .social-mob__link {
-    @include fontStyle (18px, 500, 0.02em, 1.2);
-    color: var(--accent-color);
-    @include tranSition();
+  @include fontStyle(18px, 500, 0.02em, 1.2);
+  color: var(--accent-color);
+  @include tranSition();
 }

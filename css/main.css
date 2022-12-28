@@ -403,11 +403,11 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url(../../img/desktop/white-concrete-bg.jpg);
+  background-image: url(../../images/background/bg.jpg);
   width: 100vw;
   height: 100vh;
   padding: 190px 16px;
-  z-index: 2;
+  z-index: 3;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -1788,7 +1788,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .contacts {
-    background-image: url(../../img/desktop/white-concrete-bg.jpg);
+    background-image: url(../../images/background/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
