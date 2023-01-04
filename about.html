@@ -95,7 +95,19 @@
                                             </div>
                                 </div>
                         </div>
-                            <img class="mobile-background-picture" src="./images/about/mobile/about-mob-main-1x.png"/> 
+                        <div class="mobile-background-picture">  
+                                            <picture>
+                                                <source srcset="
+                                                ./images/about/mobile/about-mob-main-1x.png 1x, 
+                                                ./images/about/mobile/about-mob-main-2x.png 2x"
+                                                media="(min-width: 768px)"
+                                                />
+                                                <img 
+                                                class="mob-hero__image" 
+                                                src="./images/about/mobile/about-mob-main-1x.png" 
+                                                alt="restaurant-hall" />
+                                            </picture>
+                                        </div>   
                 </section>
                 <section class="specialties">
                     <div class="specialties-container">
