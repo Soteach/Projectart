@@ -1798,7 +1798,8 @@ button {
 }
 @media screen and (max-width: 767px) {
   .contacts {
-    background-image: url(../images/background/bg.jpg);
+    background-color: transparent;
+    background-image: url(../images/background/background-mob-1x.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
