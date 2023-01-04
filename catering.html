@@ -93,7 +93,19 @@
                             </div>
                         </div>
                     </div>
-                        <img class="mobile-background-picture" src="./images/catering/mobile/catering-hero-mob-2x.png"/> 
+                    <div class="mobile-background-picture">  
+                                            <picture>
+                                                <source srcset="
+                                                ./images/catering/mobile/catering-hero-mob-1x.png 1x, 
+                                                ./images/catering/mobile/catering-hero-mob-2x.png.png 2x"
+                                                media="(min-width: 768px)"
+                                                />
+                                                <img 
+                                                class="mob-hero__image" 
+                                                src="./images/catering/mobile/catering-hero-mob-1x.png" 
+                                                alt="restaurant-hall" />
+                                            </picture>
+                        </div>   
             </section>
             <section class="menu-gallery">
                 <div class="container">
