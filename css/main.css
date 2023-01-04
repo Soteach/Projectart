@@ -829,28 +829,28 @@ img {
 }
 
 .dishes {
-  background-image: url(../../images/background/background-desk-1x);
+  background-image: url(../images/background/background-desk-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 480px) {
   .dishes {
-    background-image: url(../../images/background/background-mob-1x.png);
+    background-image: url(../images/background/background-mob-1x.png);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .dishes {
-    background-image: url(../../images/background/background-mob-2x.png);
+    background-image: url(../images/background/background-mob-2x.png);
   }
 }
 @media screen and (min-width: 1440px) {
   .dishes {
-    background-image: url(../../images/background/background-desk-1x.png);
+    background-image: url(../images/background/background-desk-1x.png);
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .dishes {
-    background-image: url(../../images/background/background-desk-2x.png);
+    background-image: url(../images/background/background-desk-2x.png);
   }
 }
 
