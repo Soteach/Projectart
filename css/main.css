@@ -1798,9 +1798,14 @@ button {
 }
 @media screen and (max-width: 767px) {
   .contacts {
-    background-image: url(../../images/background/bg.jpg);
+    background-image: url(../images/background/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/background/background-mob-2x.png);
   }
 }
 
