@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: url(../images/background/background-desk-1x.png);
+  background-image: url(../images/background/background-desk-1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -42,11 +42,11 @@
 .hero-image {
   min-width: 780px;
   min-height: 100%;
-  background-image: url(../images/hero/desktop/hero-1x.png);
+  background-image: url(../images/hero/desktop/hero-1x.webp);
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/hero/desktop/hero-2x.png);
+    background-image: url(../images/hero/desktop/hero-2x.webp);
   }
   background-size: cover;
   background-repeat: no-repeat;
